@@ -1,3 +1,21 @@
+
+.App {
+  text-align: center;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  /* cursor: none; */
+}
+
+#no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
 .header {
   border: 1px solid #000;
   justify-content: space-between;
