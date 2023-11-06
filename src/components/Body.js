@@ -12,15 +12,16 @@ const Body = () => {
     fetchResturants();
   }, []);
 
+  console.log(filterRestrurantS, resListOfResturant);
   const fetchResturants = async () => {
     const data = await fetch(
       `https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9351929&lng=77.62448069999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING`
     );
     const json = await data.json();
-    console.log(
-      json?.data?.cards?.[2]?.card?.card?.gridElements?.infoWithStyle
-        ?.restaurants
-    );
+    // console.log(
+    //   json?.data?.cards?.[2]?.card?.card?.gridElements?.infoWithStyle
+    //     ?.restaurants
+    // );
     setResListOfResturant(
       json?.data?.cards?.[2]?.card?.card?.gridElements?.infoWithStyle
         ?.restaurants
@@ -41,7 +42,7 @@ const Body = () => {
     setFilterResturantS(upadatedReslist);
   };
 
-  return resListOfResturant?.length === 0 ? (
+  return filterRestrurantS?.length === 0 ? (
     <Shimmer />
   ) : (
     <div className="body">
@@ -60,11 +61,21 @@ const Body = () => {
             className="search-btn"
             onClick={() => {
               // console.log(searchText);
-              const filterRestrurant = resListOfResturant.filter((res) =>
+              const filterRestrurant = filterRestrurantS.filter((res) =>
                 res?.info?.name.toLowerCase().includes(searchText.toLowerCase())
               );
               console.log(filterRestrurant);
-              setFilterResturantS(filterRestrurant);
+              if (filterRestrurant.length !== 0) {
+                setFilterResturantS(filterRestrurant);
+              } else {
+                if (window.confirm(`The restaurant is not found in the list`)) {
+                  setSearchText("");
+                  fetchResturants();
+                }
+              }
+              if (searchText === "") {
+                fetchResturants();
+              }
             }}
           >
             Search
@@ -72,9 +83,10 @@ const Body = () => {
         </div>
 
         <button
+          disabled={searchText === "" ? false : true}
           className="filter-btn"
           onClick={() => {
-            updatedResListByTheirRatings(resListOfResturant);
+            updatedResListByTheirRatings(filterRestrurantS);
           }}
         >
           Top Rated Resrtrurant
