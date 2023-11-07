@@ -9,7 +9,7 @@ const Body = () => {
   const [searchText, setSearchText] = useState("");
 
   useEffect(() => {
-    fetchResturants();
+    // fetchResturants();
   }, []);
 
   console.log(filterRestrurantS, resListOfResturant);
