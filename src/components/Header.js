@@ -6,12 +6,12 @@ const Header = () => {
   const [btnState, setBtnstate] = useState("Logout");
 
   useEffect(() => {
-    console.log("Login and Logged out button clicked");
+
   }, [btnState])
 
   const navLinkStyle = (props) => {
     const { isActive } = props;
-    console.log(props)
+    // console.log(props)
     return {
       color: isActive ? "Red" : "black",
       textDecoration: isActive ? "none" : "none"

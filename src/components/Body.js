@@ -2,9 +2,10 @@ import { useEffect, useState } from "react";
 // import resList from "../utils/mockData";
 import ResrtrurantContainer from "./ResrtrurantCard";
 import Shimmer from "./Shimmer";
+import { Link } from "react-router-dom";
 
 const Body = () => {
-  const [resListOfResturant, setResListOfResturant] = useState([]);
+  // const [resListOfResturant, setResListOfResturant] = useState([]);
   const [filterRestrurantS, setFilterResturantS] = useState([]);
   const [searchText, setSearchText] = useState("");
 
@@ -12,7 +13,7 @@ const Body = () => {
     fetchResturants();
   }, []);
 
-  console.log(filterRestrurantS, resListOfResturant);
+  console.log(filterRestrurantS);
   const fetchResturants = async () => {
     const data = await fetch(
       `https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9351929&lng=77.62448069999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING`
@@ -22,10 +23,10 @@ const Body = () => {
     //   json?.data?.cards?.[2]?.card?.card?.gridElements?.infoWithStyle
     //     ?.restaurants
     // );
-    setResListOfResturant(
-      json?.data?.cards?.[2]?.card?.card?.gridElements?.infoWithStyle
-        ?.restaurants
-    );
+    // setResListOfResturant(
+    //   json?.data?.cards?.[2]?.card?.card?.gridElements?.infoWithStyle
+    //     ?.restaurants
+    // );
     setFilterResturantS(
       json?.data?.cards?.[2]?.card?.card?.gridElements?.infoWithStyle
         ?.restaurants
@@ -33,7 +34,7 @@ const Body = () => {
   };
 
   //Conditional Rendering
-  // if (resListOfResturant?.length === 0) {
+  // if (filterRestrurantS === undefined) {
   //   return <Shimmer />;
   // }
 
@@ -42,7 +43,7 @@ const Body = () => {
     setFilterResturantS(upadatedReslist);
   };
 
-  return filterRestrurantS?.length === 0 ? (
+  return (filterRestrurantS?.length === 0 || filterRestrurantS === undefined) ? (
     <Shimmer />
   ) : (
     <div className="body">
@@ -61,11 +62,11 @@ const Body = () => {
             className="search-btn"
             onClick={() => {
               // console.log(searchText);
-              const filterRestrurant = filterRestrurantS.filter((res) =>
+              const filterRestrurant = filterRestrurantS?.filter((res) =>
                 res?.info?.name.toLowerCase().includes(searchText.toLowerCase())
               );
               console.log(filterRestrurant);
-              if (filterRestrurant.length !== 0) {
+              if (filterRestrurant?.length !== 0) {
                 setFilterResturantS(filterRestrurant);
               } else {
                 if (window.confirm(`The restaurant is not found in the list`)) {
@@ -94,10 +95,11 @@ const Body = () => {
       </div>
       <div className="res-container">
         {filterRestrurantS?.map((resDataObj, i) => (
-          <ResrtrurantContainer
-            key={resDataObj?.info?.id}
-            resData={resDataObj}
-          />
+          <Link to={`/restrurants/${resDataObj?.info?.id}`} key={resDataObj?.info?.id} style={{ textDecoration: "none" ,color:"black"}}>
+            <ResrtrurantContainer
+              resData={resDataObj}
+            />
+          </Link>
         ))}
       </div>
       <div className="filter">

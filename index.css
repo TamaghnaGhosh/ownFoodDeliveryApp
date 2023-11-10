@@ -57,6 +57,7 @@
   display: flex;
   justify-content: space-between;
   border: 1px solid black;
+  align-items: center;
 }
 .shimmer-container {
   display: flex;
@@ -78,4 +79,8 @@
   color: #000;
   font-size: 16px;
   cursor: pointer;
+}
+
+.ListName{
+  list-style-type: none;
 }
