@@ -1,13 +1,14 @@
-import { useRouteError } from "react-router-dom"
+import { useRouteError, useParams } from "react-router-dom"
 const Error = () => {
 
     const error = useRouteError();
-    console.log(error)
+    const errorPage = useParams();
+
     return (
         <div>
             <h1>Oops!!!!</h1>
             <h2>Spmethings went wrong!! </h2>
-            <h3>{error.status} : {error.statusText}</h3>
+            <h3>{error?.status || "This" + " " + " " + errorPage.resId} : {error?.statusText || 'restrurant is not found'}</h3>
         </div>
     )
 }

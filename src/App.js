@@ -48,6 +48,7 @@ const appLayout = createBrowserRouter([
     ],
 
     //This component helps when it gets a 404 error (errorElement)
+    
     errorElement: <Error />
   },
 ])
