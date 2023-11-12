@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Shimmer from './Shimmer';
 import { useParams } from 'react-router-dom';
-import { MENU_API } from '../utils/constants';
+import { MENU_API, MENU_API_CDN_IMG } from '../utils/constants';
 import Error from './Error';
 
 const RestrurantMenuPage = () => {
@@ -12,7 +12,7 @@ const RestrurantMenuPage = () => {
     useEffect(() => {
 
         fectMenuPage();
-    
+
     }, [])
 
     const fectMenuPage = async () => {
@@ -41,8 +41,13 @@ const RestrurantMenuPage = () => {
             <p style={{ marginLeft: "38px" }}>{cuisines.join(", ")} - {costForTwoMessage}</p>
             <ul className='ListName'>
                 <h3>{resturantMenu?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card?.card?.title}</h3>
-                {itemCards?.map((item) => <li key={item?.card?.info?.id} >
-                    {item?.card?.info?.name} - <b>{" Rs."} {item?.card?.info?.price / 100 || item?.card?.info?.defaultPrice / 100}</b>
+                {itemCards?.map((item) => <li key={item?.card?.info?.id} className='li_items'>
+                    {item?.card?.info?.name} - {" Rs."} {item?.card?.info?.price / 100 || item?.card?.info?.defaultPrice / 100}
+                    <img
+                        className="items-logo"
+                        alt="res-card" width={256}
+                        src={`${MENU_API_CDN_IMG}${item?.card?.info?.imageId}`}
+                    />
                 </li>)}
             </ul>
         </div>

@@ -97,3 +97,20 @@
   width: 500px;
   border: 1px solid black;
 }
+.li_items {
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 5px;
+  display: flex;
+  padding-bottom: 14px;
+  -webkit-box-align: start;
+  align-items: flex-start;
+}
+
+.items-logo {
+  width: 200px;
+  height: 96px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 6px;
+}
