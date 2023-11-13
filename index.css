@@ -113,4 +113,5 @@
   -o-object-fit: cover;
   object-fit: cover;
   border-radius: 6px;
+  border: 1px solid #f1c675;
 }

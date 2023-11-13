@@ -10,7 +10,9 @@ const Body = () => {
   const [searchText, setSearchText] = useState("");
 
   useEffect(() => {
+
     fetchResturants();
+  
   }, []);
 
   console.log(filterRestrurantS);
