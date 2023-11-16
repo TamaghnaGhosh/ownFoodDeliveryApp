@@ -1,7 +1,19 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 const User = (props) => {
     const [count, setCount] = useState(0)
+    useEffect(() => {
+        //definitions
+        //useEffect is a React Hook that lets you synchronize a component with an external system.
+        const timer = setInterval(() => {
+            console.log("componentDidMount/NAMASTE REACT OP")
+        }, 1000);
+        return () => {
+            console.log("componentWillUnmount/useEffect Return");
+            clearInterval(timer);
+        }
+    }, [])
+
     return (
         <div className='user-card'>
             <h2>Name:{props.name}</h2>
