@@ -18,7 +18,7 @@ const RestrurantMenuPage = () => {
         const data = await fetch(MENU_API + resId + "&catalog_qa=undefined&submitAction=ENTER");
         const result = await data.json();
         setResturantMenu(result?.data);
-        setResturantMenuAllCards(result?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards);
+        setResturantMenuAllCards(result?.data?.cards?.[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards);
     }
 
     if (resturantMenu === null) return <Shimmer />
