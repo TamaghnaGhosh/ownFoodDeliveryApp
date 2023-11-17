@@ -8,7 +8,7 @@ const Error = () => {
         <div>
             <h1>Oops!!!!</h1>
             <h2>Spmethings went wrong!! </h2>
-            <h3>{error?.status || "This" + " " + " " + errorPage.resId} : {error?.statusText || 'restrurant is not found'}</h3>
+            <h3>{error?.status || "This" + " " + " " + "(" + errorPage.resId + ")"} : {error?.statusText || 'restrurant is not found'}</h3>
         </div>
     )
 }
