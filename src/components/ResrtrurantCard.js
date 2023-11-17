@@ -1,19 +1,11 @@
-import { CDN_URL, CDN_URL_COPY } from "../utils/constants";
+import { CDN_URL } from "../utils/constants";
 const ResrtrurantContainer = (props) => {
-  // console.log(props?.resData);
   const { name, cuisines, ...otherProps } = props?.resData?.info;
 
-  // console.log(otherProps);
 
   return (
     <div className="res-card" style={{ backgroundColor: "#f0f0f0" }}>
-      {/* {otherProps?.id === "000003" || otherProps?.id === "000004" ? (
-        <img
-          className="res-logo"
-          alt="res-card"
-          src={`${CDN_URL_COPY}${otherProps.imgCode}`}
-        />
-      ) : ( */}
+
       <img
         className="res-logo"
         alt="res-card"
