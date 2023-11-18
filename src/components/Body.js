@@ -1,11 +1,9 @@
 import { useEffect, useState } from "react";
-// import resList from "../utils/mockData";
 import ResrtrurantContainer from "./ResrtrurantCard";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 
 const Body = () => {
-  // const [resListOfResturant, setResListOfResturant] = useState([]);
   const [filterRestrurantS, setFilterResturantS] = useState([]);
   const [searchText, setSearchText] = useState("");
 
@@ -21,14 +19,6 @@ const Body = () => {
       `https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9351929&lng=77.62448069999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING`
     );
     const json = await data.json();
-    // console.log(
-    //   json?.data?.cards?.[2]?.card?.card?.gridElements?.infoWithStyle
-    //     ?.restaurants
-    // );
-    // setResListOfResturant(
-    //   json?.data?.cards?.[2]?.card?.card?.gridElements?.infoWithStyle
-    //     ?.restaurants
-    // );
     setFilterResturantS(
       json?.data?.cards?.[2]?.card?.card?.gridElements?.infoWithStyle
         ?.restaurants
@@ -63,7 +53,6 @@ const Body = () => {
           <button
             className="search-btn"
             onClick={() => {
-              // console.log(searchText);
               const filterRestrurant = filterRestrurantS?.filter((res) =>
                 res?.info?.name.toLowerCase().includes(searchText.toLowerCase())
               );
