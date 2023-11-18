@@ -22,9 +22,9 @@
 }
 .res-card {
   width: 235px;
+  height: 92%;
   margin: 2px;
   padding: 15px;
-  height: 500px;
 }
 
 .res-container {
