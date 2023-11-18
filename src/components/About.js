@@ -1,5 +1,5 @@
 import { Component } from "react";
-// import UserClass from "./UserClass"
+import UserClass from "./UserClass"
 import User from "./User";
 
 
@@ -22,7 +22,7 @@ class About extends Component {
         return (
             <div className="About">
                 <h1>Hey About Page class base Component is here</h1>
-                {/* <UserClass name={"First"} /> */}
+                <UserClass name={"First"} />
                 <User name={"First"}/>
             </div>
 

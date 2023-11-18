@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import ResrtrurantContainer from "./ResrtrurantCard";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 const Body = () => {
   const [filterRestrurantS, setFilterResturantS] = useState([]);
@@ -10,7 +11,7 @@ const Body = () => {
   useEffect(() => {
 
     fetchResturants();
-  
+
   }, []);
 
   console.log(filterRestrurantS);
@@ -24,6 +25,10 @@ const Body = () => {
         ?.restaurants
     );
   };
+
+  const onLineStatus = useOnlineStatus();
+
+  if (onLineStatus === false) return <h1>Please check the internet connection in your system</h1>;
 
   //Conditional Rendering
   // if (filterRestrurantS === undefined) {
@@ -86,7 +91,7 @@ const Body = () => {
       </div>
       <div className="res-container">
         {filterRestrurantS?.map((resDataObj, i) => (
-          <Link to={`/restrurants/${resDataObj?.info?.id}`} key={resDataObj?.info?.id} style={{ textDecoration: "none" ,color:"black"}}>
+          <Link to={`/restrurants/${resDataObj?.info?.id}`} key={resDataObj?.info?.id} style={{ textDecoration: "none", color: "black" }}>
             <ResrtrurantContainer
               resData={resDataObj}
             />

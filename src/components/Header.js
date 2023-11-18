@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 import { LOGO_URL } from "../utils/constants";
 import { Link, NavLink } from "react-router-dom";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 const Header = () => {
   const [btnState, setBtnstate] = useState("Logout");
-
+  const onLineStatus = useOnlineStatus();
   useEffect(() => {
 
   }, [btnState])
@@ -24,9 +25,11 @@ const Header = () => {
       </div>
       <div className="nav-items">
         <ul>
+          <li>Online Status: {onLineStatus ? "🟢" : "🔴"}</li>
           <li><NavLink to={""} style={navLinkStyle}>Home</NavLink></li>
           <li><NavLink to={"about"} style={navLinkStyle}>About us</NavLink></li>
           <li><NavLink to={"contact"} style={navLinkStyle}>contact us</NavLink></li>
+          <li><NavLink to={"groceries"} style={navLinkStyle}>Grocery</NavLink></li>
           <li>cart</li>
           <button
             className="button-logIn-logOut"

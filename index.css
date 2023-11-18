@@ -11,6 +11,11 @@
 .logo {
   width: 150px;
 }
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .nav-items > ul {
   display: flex;
   font-size: 20px;
