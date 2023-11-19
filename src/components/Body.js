@@ -25,10 +25,10 @@ const Body = () => {
   ) : (
     <div className="body">
       <div className="filter">
-        <div className="search">
+        <div className="search p-4 m-4">
           <input
             type="text"
-            className="search-box"
+            className="border border-solid border-black"
             placeholder="Search Resturants"
             name="search"
             autoComplete="false"
@@ -36,7 +36,7 @@ const Body = () => {
             value={searchText}
           />
           <button
-            className="search-btn"
+            className="px-4 py-1 bg-gray-100 m-4"
             onClick={() => {
               const filterRestrurant = filterRestrurantS?.filter((res) =>
                 res?.info?.name.toLowerCase().includes(searchText.toLowerCase())

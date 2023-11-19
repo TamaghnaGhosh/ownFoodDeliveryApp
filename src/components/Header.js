@@ -19,18 +19,18 @@ const Header = () => {
     }
   }
   return (
-    <div className="header">
+    <div className="flex items-center justify-between shadow-lg">
       <div className="logo-container">
-        <Link to={""}><img className="logo" src={LOGO_URL} /></Link>
+        <Link to={""}><img className="w-56" src={LOGO_URL} /></Link>
       </div>
-      <div className="nav-items">
-        <ul>
-          <li>Online Status: {onLineStatus ? "🟢" : "🔴"}</li>
-          <li><NavLink to={""} style={navLinkStyle}>Home</NavLink></li>
-          <li><NavLink to={"about"} style={navLinkStyle}>About us</NavLink></li>
-          <li><NavLink to={"contact"} style={navLinkStyle}>contact us</NavLink></li>
-          <li><NavLink to={"groceries"} style={navLinkStyle}>Grocery</NavLink></li>
-          <li>cart</li>
+      <div className="flex items-center text-sl">
+        <ul className="flex p-4 m-4">
+          <li className="px-4">Online Status: {onLineStatus ? "🟢" : "🔴"}</li>
+          <li className="px-4"><NavLink to={""} style={navLinkStyle}>Home</NavLink></li>
+          <li className="px-4"><NavLink to={"about"} style={navLinkStyle}>About us</NavLink></li>
+          <li className="px-4"><NavLink to={"contact"} style={navLinkStyle}>contact us</NavLink></li>
+          <li className="px-4"><NavLink to={"groceries"} style={navLinkStyle}>Grocery</NavLink></li>
+          <li className="px-4">cart</li>
           <button
             className="button-logIn-logOut"
             onClick={() =>
