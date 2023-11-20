@@ -19,7 +19,7 @@ const Grocery = lazy(() => import("./components/Grocery"));
 
 const AppLayout = () => {
   return (
-    <div className="App">
+    <div className="text-center">
       <Header />
 
       {/* This Outlet element is replacing children elements */}

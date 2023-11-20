@@ -109,7 +109,6 @@
     display: flex;
     padding-bottom: 35px;
     -webkit-box-align: start;
-    align-items: flex-start;
   }
   
   .items-logo {

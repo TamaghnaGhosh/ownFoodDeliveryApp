@@ -24,7 +24,7 @@ const Body = () => {
     <Shimmer />
   ) : (
     <div className="body">
-      <div className="filter">
+      <div className="filter flex">
         <div className="search p-4 m-4">
           <input
             type="text"
@@ -36,7 +36,7 @@ const Body = () => {
             value={searchText}
           />
           <button
-            className="px-4 py-1 bg-gray-100 m-4"
+            className="px-4 py-1 bg-slate-400 m-4 rounded-lg text-zinc-50"
             onClick={() => {
               const filterRestrurant = filterRestrurantS?.filter((res) =>
                 res?.info?.name.toLowerCase().includes(searchText.toLowerCase())
@@ -58,18 +58,19 @@ const Body = () => {
             Search
           </button>
         </div>
-
-        <button
-          disabled={searchText === "" ? false : true}
-          className="filter-btn"
-          onClick={() => {
-            updatedResListByTheirRatings(filterRestrurantS);
-          }}
-        >
-          Top Rated Resrtrurant
-        </button>
+        <div className="search p-4 m-4 flex item-center">
+          <button
+            disabled={searchText === "" ? false : true}
+            className="px-4 py-1 bg-slate-400 m-4 text-zinc-50 rounded-lg disabled:bg-gray-300"
+            onClick={() => {
+              updatedResListByTheirRatings(filterRestrurantS);
+            }}
+          >
+            Top Rated Resrtrurant
+          </button>
+        </div>
       </div>
-      <div className="res-container">
+      <div className="res-container flex flex-wrap justify-start p-1">
         {filterRestrurantS?.map((resDataObj, i) => (
           <Link to={`/restrurants/${resDataObj?.info?.id}`} key={resDataObj?.info?.id} style={{ textDecoration: "none", color: "black" }}>
             <ResrtrurantContainer

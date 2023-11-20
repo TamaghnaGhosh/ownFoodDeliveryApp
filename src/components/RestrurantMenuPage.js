@@ -30,20 +30,21 @@ const RestrurantMenuPage = () => {
     const allTheMenusOfIndexFive = resturantMenu?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards?.[5]?.card?.card?.itemCards;
 
     return (
-        <div className='Menu'>
-            <h2 style={{ marginLeft: "38px" }}>{name} </h2>
-            <p style={{ marginLeft: "38px" }}>{cuisines.join(", ")} - {costForTwoMessage}</p>
-            <ul className='ListName'>
-                <h3>{resturantMenu?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards?.[5]?.card?.card?.title}</h3>
-                <button onClick={() => setresturantVegMenuToggleButton(!resturantVegMenuToggleButton)}>
-                    {resturantVegMenuToggleButton ? "ONLY VEG" : "NON VEG & VEG"}
-                </button>
-                {(resturantVegMenuToggleButton ? filterMenusByVegOnly[5] : allTheMenusOfIndexFive)?.map((item) =>
-                    <RestrurantMenuCard item={item} key={item?.card?.info?.id} />
-                )}
-            </ul>
-        </div>
-
+        allTheMenusOfIndexFive !== undefined ? <>
+            <div className='Menu'>
+                <h2>{name} </h2>
+                <p>{cuisines.join(", ")} - {costForTwoMessage}</p>
+                <ul className='ListName'>
+                    <h3>{resturantMenu?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards?.[5]?.card?.card?.title}</h3>
+                    <button className="px-4 py-1 bg-slate-400 m-4 rounded-lg text-white" onClick={() => setresturantVegMenuToggleButton(!resturantVegMenuToggleButton)}>
+                        {resturantVegMenuToggleButton ? "ONLY VEG" : "NON VEG & VEG"}
+                    </button>
+                    {(resturantVegMenuToggleButton ? filterMenusByVegOnly[5] : allTheMenusOfIndexFive)?.map((item) =>
+                        <RestrurantMenuCard item={item} key={item?.card?.info?.id} />
+                    )}
+                </ul>
+            </div>
+        </> : <Shimmer name="allTheMenusOfIndexFiveUndefined" />
     )
 }
 
