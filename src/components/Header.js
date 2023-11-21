@@ -1,15 +1,17 @@
 import { useEffect, useState } from "react";
 import { LOGO_URL } from "../utils/constants";
-import { Link, NavLink } from "react-router-dom";
+import { useNavigate, NavLink } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
 
 const Header = () => {
   const [btnState, setBtnstate] = useState("Logout");
   const onLineStatus = useOnlineStatus();
-  useEffect(() => {
+  const navigate = useNavigate();
 
-  }, [btnState])
-
+  const ReturnHome = () => {
+    navigate("");
+    window.location.reload()
+  }
   const navLinkStyle = (props) => {
     const { isActive } = props;
     // console.log(props)
@@ -21,7 +23,7 @@ const Header = () => {
   return (
     <div className="flex items-center justify-between shadow-lg">
       <div className="logo-container">
-        <Link to={""}><img className="w-36" src={LOGO_URL} /></Link>
+        <div onClick={() => ReturnHome()}><img className="w-36 cursor-pointer" src={LOGO_URL} /></div>
       </div>
       <div className="flex items-center text-sl">
         <ul className="flex p-4 m-4">
