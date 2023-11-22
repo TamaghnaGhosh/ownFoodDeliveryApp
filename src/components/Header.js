@@ -10,7 +10,7 @@ const Header = () => {
 
   const ReturnHome = () => {
     navigate("");
-    window.location.reload()
+    window.location.reload(true)
   }
   const navLinkStyle = (props) => {
     const { isActive } = props;
