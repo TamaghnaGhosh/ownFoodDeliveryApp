@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
-import Shimmer from './Shimmer';
+import Shimmer from '../Shimmer';
 import { useParams } from 'react-router-dom';
-import Error from './Error';
-import useResrurantMenu from '../utils/useResrurantMenu';
-import useFilterMenusByVegOnly from '../utils/useFilterMenusByVegOnly';
+import Error from '../Error';
+import useResrurantMenu from '../../utils/useResrurantMenu';
+import useFilterMenusByVegOnly from '../../utils/useFilterMenusByVegOnly';
 import RestrurantMenuCard from './RestrurantMenuCard';
 
 const RestrurantMenuPage = () => {
@@ -29,7 +29,8 @@ const RestrurantMenuPage = () => {
 
     const allTheMenusOfIndexSix = resturantMenu?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards?.[6]?.card?.card?.itemCards;
 
-    const allTheCardItems = resturantMenu?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards?.filter((item) => item?.card?.card?.["@type"] === "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory");
+    const allTheCardItems = resturantMenu?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards?.filter((item) => item?.card?.card?.["@type"] ===
+        "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory");
     // console.log(allTheCardItems);
 
     return (
@@ -45,7 +46,8 @@ const RestrurantMenuPage = () => {
 
             {/* The previous way I was doing it my own way  */}
             <ul className='ListName'>
-                <h3 className='font-semibold py-2'>{resturantMenu?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards?.[6]?.card?.card?.title} -({!resturantVegMenuToggleButton ? allTheMenusOfIndexSix?.length : filterMenusByVegOnly?.[6]?.length})</h3>
+                <h3 className='font-semibold py-2'>{resturantMenu?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards?.[6]?.card?.card?.title} -({!resturantVegMenuToggleButton ?
+                    allTheMenusOfIndexSix?.length : filterMenusByVegOnly?.[6]?.length})</h3>
                 <button className="px-4 py-1 bg-slate-400 m-4 rounded-lg text-white" onClick={() => setresturantVegMenuToggleButton(!resturantVegMenuToggleButton)}>
                     {resturantVegMenuToggleButton ? "ONLY VEG" : "NON VEG & VEG"}
                 </button>

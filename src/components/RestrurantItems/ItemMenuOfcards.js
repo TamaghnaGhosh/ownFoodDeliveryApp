@@ -1,5 +1,5 @@
 import React from 'react'
-import { MENU_API_CDN_IMG } from '../utils/constants'
+import { MENU_API_CDN_IMG } from '../../utils/constants'
 
 const ItemMenuOfcards = ({ items }) => {
     return (

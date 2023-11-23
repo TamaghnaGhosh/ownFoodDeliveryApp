@@ -8,7 +8,7 @@ import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 
 import Contact from "./components/Contact";
 import Error from "./components/Error";
-import RestrurantMenuPage from "./components/RestrurantMenuPage";
+import RestrurantMenuPage from "./components/RestrurantItems/RestrurantMenuPage";
 
 
 //import About from "./components/About";
