@@ -3,8 +3,9 @@ import ItemMenuOfcards from './ItemMenuOfcards';
 const RestrurantMenuCard = ({ item }) => {
     const [showItems, setShowItems] = useState(false);
     const handleClickOpenAccordion = () => {
-        setShowItems(!showItems);
+        setShowItems(item.itemCards.length > 0 ? !showItems : false);
     }
+    console.log(item.itemCards.length > 0);
     return (
         <div>
             {/* Header */}
@@ -12,15 +13,10 @@ const RestrurantMenuCard = ({ item }) => {
                 <div className="flex justify-between" onClick={() => handleClickOpenAccordion()}>
                     <span className='font-bold text-lg pl-3'>{item?.title} ({item?.itemCards?.length})</span>
                     <span>{showItems ? "🔽" : "🔼"}</span>
-
                 </div>
-
                 {/* Accordion Body */}
                 {showItems && <ItemMenuOfcards items={item?.itemCards} />}
             </div>
-
-
-
         </div>
     )
 }
