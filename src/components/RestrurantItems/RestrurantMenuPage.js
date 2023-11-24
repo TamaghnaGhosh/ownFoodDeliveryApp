@@ -7,7 +7,7 @@ import useFilterMenusByVegOnly from '../../utils/useFilterMenusByVegOnly';
 import RestrurantMenuCard from './RestrurantMenuCard';
 
 const RestrurantMenuPage = () => {
-    
+
     const { resId } = useParams();
 
     const [resturantVegMenuToggleButton, setresturantVegMenuToggleButton] = useState(false);
@@ -54,7 +54,7 @@ const RestrurantMenuPage = () => {
             <h2 className='font-bold text-2xl my-6'>{name} </h2>
             <p className=''>{cuisines.join(", ")} - {costForTwoMessage}</p>
             <button className="px-4 py-1 bg-slate-400 m-4 rounded-lg text-white" onClick={() => { filterMenusByVegOnlyFunc(allTheCardItems, filterMenusByVegOnly), setresturantVegMenuToggleButton(!resturantVegMenuToggleButton) }}>
-                {resturantVegMenuToggleButton ? "ONLY VEG" : "NON VEG & VEG"}
+                {resturantVegMenuToggleButton ? "NON VEG & VEG" : "ONLY VEG"}
             </button>
             {/* *********All categories of card items shown by an accordion****** */}
             {(resturantVegMenuToggleButton ? clonedArrayAddVegItemCard : allTheCardItems)?.map((categories) => {
@@ -64,10 +64,10 @@ const RestrurantMenuPage = () => {
             {/* The previous way I was doing it my own way  */}
 
             {/* <ul className='ListName'> */}
-                {/* <h3 className='font-semibold py-2'>{resturantMenu?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards?.[1]?.card?.card?.title} -({!resturantVegMenuToggleButton ?
+            {/* <h3 className='font-semibold py-2'>{resturantMenu?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards?.[1]?.card?.card?.title} -({!resturantVegMenuToggleButton ?
                     allTheMenusOfIndexOne?.length : filterMenusByVegOnly?.[0]?.length})</h3> */}
 
-                {/* {(resturantVegMenuToggleButton ? filterMenusByVegOnly[6] : allTheMenusOfIndexOne)?.map((item) =>
+            {/* {(resturantVegMenuToggleButton ? filterMenusByVegOnly[6] : allTheMenusOfIndexOne)?.map((item) =>
                         <RestrurantMenuCard item={item} key={item?.card?.info?.id} />
                     )} */}
             {/* </ul> */}
