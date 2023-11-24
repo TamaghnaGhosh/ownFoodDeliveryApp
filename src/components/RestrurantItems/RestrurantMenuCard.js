@@ -9,7 +9,8 @@ const RestrurantMenuCard = ({ item }) => {
     return (
         <div>
             {/* Header */}
-            {item.itemCards.length > 0 &&
+            {
+                item.itemCards.length > 0 &&
                 <div className="w-6/12 mx-auto my-4 bg-gray-50 shadow-lg p-4 cursor-pointer">
                     <div className="flex justify-between" onClick={() => handleClickOpenAccordion()}>
                         <span className='font-bold text-lg pl-3'>{item?.title} ({item?.itemCards?.length})</span>
