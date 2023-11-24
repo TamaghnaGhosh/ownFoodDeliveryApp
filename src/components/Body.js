@@ -11,7 +11,7 @@ const Body = () => {
 
   const { filterRestrurantS, setFilterResturantS, fetchResturants, searchText, setSearchText } = useFetchRestrurants();
 
-  console.log(filterRestrurantS);
+  // console.log(filterRestrurantS);
 
   const TopRatedHigherOrderComponents = WithLabelTopRatedRestrurants(ResrtrurantContainer);
 

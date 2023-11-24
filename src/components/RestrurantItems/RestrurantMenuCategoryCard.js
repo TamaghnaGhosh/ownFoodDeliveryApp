@@ -1,30 +1,31 @@
 import { useState } from 'react';
 import ItemMenuOfcards from './ItemMenuOfcards';
-const RestrurantMenuCard = ({ item }) => {
-    const [showItems, setShowItems] = useState(false);
-    const handleClickOpenAccordion = () => {
-        setShowItems(item.itemCards.length > 0 ? !showItems : false);
+const RestrurantMenuCategoryCard = ({ item, showItems, setShowIndex, showIndex, index }) => {
+    const [activeIndex, setActiveIndex] = useState(false);
+    const handleClickOpenAccordion = (indexId) => {
+        setShowIndex();
+        setActiveIndex(index === indexId);
     }
-    // console.log(item.itemCards.length > 0);
+    console.log(activeIndex);
     return (
         <div>
             {/* Header */}
             {
                 item.itemCards.length > 0 &&
                 <div className="w-6/12 mx-auto my-4 bg-gray-50 shadow-lg p-4 cursor-pointer">
-                    <div className="flex justify-between" onClick={() => handleClickOpenAccordion()}>
+                    <div className="flex justify-between" onClick={(e) => handleClickOpenAccordion(index)}>
                         <span className='font-bold text-lg pl-3'>{item?.title} ({item?.itemCards?.length})</span>
                         <span>{showItems ? "🔽" : "🔼"}</span>
                     </div>
                     {/* Accordion Body */}
-                    {showItems && <ItemMenuOfcards items={item?.itemCards} />}
+                    {(showItems === true) ? <ItemMenuOfcards items={item?.itemCards} /> : null}
                 </div>
             }
         </div>
     )
 }
 
-export default RestrurantMenuCard;
+export default RestrurantMenuCategoryCard;
 
 
 {/* <li className='justify-between flex items-start p-1 pb-[35px]'>
