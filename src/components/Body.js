@@ -32,7 +32,7 @@ const Body = () => {
         <div className="search p-4 m-4">
           <input
             type="text"
-            className="border border-solid border-black"
+            className="border border-solid border-slate-400 rounded-lg py-[2px]"
             placeholder="Search Resturants"
             name="search"
             autoComplete="false"

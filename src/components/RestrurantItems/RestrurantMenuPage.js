@@ -10,9 +10,9 @@ const RestrurantMenuPage = () => {
 
     const { resId } = useParams();
 
-    const [resturantVegMenuToggleButton, setresturantVegMenuToggleButton] = useState(false);
+    const [activeIndex, setActiveIndex] = useState(0);
 
-    const [activeIndex, setActiveIndex] = useState(null);
+    const [resturantVegMenuToggleButton, setresturantVegMenuToggleButton] = useState(false);
 
     const [clonedArrayAddVegItemCard, setClonedArrayAddVegItemCard] = useState([]);
 
@@ -45,7 +45,7 @@ const RestrurantMenuPage = () => {
     }
 
     const onItemClick = (index) => {
-        console.log(activeIndex === index ? null : index)
+        // console.log(activeIndex === index ? null : index)
         setActiveIndex(activeIndex === index ? null : index);
     };
 

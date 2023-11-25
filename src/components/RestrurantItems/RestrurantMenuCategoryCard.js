@@ -3,7 +3,7 @@ const RestrurantMenuCategoryCard = ({ item, activeIndex, index, onItemClick }) =
 
     const showItems = index === activeIndex;
     console.log(showItems)
-    // console.log(activeIndex)
+    console.log(item?.title);
     return (
         <div>
             {/* Header */}
