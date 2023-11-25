@@ -11,7 +11,8 @@ const RestrurantMenuPage = () => {
     const { resId } = useParams();
 
     const [resturantVegMenuToggleButton, setresturantVegMenuToggleButton] = useState(false);
-    const [showIndex, setShowIndex] = useState(null);
+
+    const [activeIndex, setActiveIndex] = useState(null);
 
     const [clonedArrayAddVegItemCard, setClonedArrayAddVegItemCard] = useState([]);
 
@@ -32,7 +33,6 @@ const RestrurantMenuPage = () => {
 
     function filterMenusByVegOnlyFunc(allTheCardItems, filterMenusByVegOnly) {
         const clonedArray = JSON.parse(JSON.stringify(allTheCardItems));
-
         clonedArray.forEach((addItemCards, j) => {
             delete addItemCards.card.card.itemCards;
             filterMenusByVegOnly.forEach((addItemCardsVeg, i) => {
@@ -44,7 +44,10 @@ const RestrurantMenuPage = () => {
         setClonedArrayAddVegItemCard(clonedArray);
     }
 
-
+    const onItemClick = (index) => {
+        console.log(activeIndex === index ? null : index)
+        setActiveIndex(activeIndex === index ? null : index);
+    };
 
     const { name, cuisines, costForTwoMessage } = (resturantMenu?.cards[0]?.card?.card?.info);
 
@@ -59,10 +62,13 @@ const RestrurantMenuPage = () => {
                 {resturantVegMenuToggleButton ? "NON VEG & VEG" : "ONLY VEG"}
             </button>
             {/* *********All categories of card items shown by an accordion****** */}
-            {(resturantVegMenuToggleButton ? clonedArrayAddVegItemCard : allTheCardItems)?.map((categories, index) => (
-                <RestrurantMenuCategoryCard item={categories?.card?.card} key={categories?.card?.card?.title}
-                    showItems={index === showIndex && true}
-                    setShowIndex={() => setShowIndex(index)} showIndex={showIndex} index={index} />
+            {(resturantVegMenuToggleButton ? clonedArrayAddVegItemCard : allTheCardItems)?.map((categories, index) =>
+            (
+                <RestrurantMenuCategoryCard item={categories?.card?.card}
+                    key={categories?.card?.card?.title}
+                    onItemClick={() => onItemClick(index)}
+                    activeIndex={activeIndex}
+                    index={index} />
             ))}
 
         </div>
