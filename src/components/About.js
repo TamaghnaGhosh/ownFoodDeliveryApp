@@ -22,8 +22,8 @@ class About extends Component {
         return (
             <div className="About">
                 <h1>Hey About Page class base Component is here</h1>
-                <UserClass name={"First"} />
-                <User name={"First"}/>
+                <UserClass name={"class Componenet"} />
+                <User name={"functional Componeent"} />
             </div>
 
         )

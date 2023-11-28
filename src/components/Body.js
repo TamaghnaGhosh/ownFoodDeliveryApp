@@ -3,12 +3,15 @@ import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import useFetchRestrurants from "../utils/useFetchRestrurants";
+import { useContext } from "react";
+import UserContext from "../utils/UserContext";
+
 
 const Body = () => {
 
   //check internet connectivity customs hook
   const onLineStatus = useOnlineStatus();
-
+  const { loggedInUser, setLoginName } = useContext(UserContext);
   const { filterRestrurantS, setFilterResturantS, fetchResturants, searchText, setSearchText } = useFetchRestrurants();
 
   // console.log(filterRestrurantS);
@@ -61,6 +64,15 @@ const Body = () => {
           >
             Search
           </button>
+
+          <input
+            type="text"
+            className="border border-solid border-slate-400 rounded-lg py-[2px] px-2"
+            placeholder="Context Provider"
+            autoComplete="false"
+            onChange={(e) => setLoginName(e.target.value)}
+            value={loggedInUser}
+          />
         </div>
         <div className="search p-4 m-4 flex item-center">
           <button

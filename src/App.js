@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from "react";
+import React, { lazy, Suspense, useState, useEffect } from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./components/Header";
 import Body from "./components/Body";
@@ -9,6 +9,7 @@ import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import Contact from "./components/Contact";
 import Error from "./components/Error";
 import RestrurantMenuPage from "./components/RestrurantItems/RestrurantMenuPage";
+import UserContext from "./utils/UserContext";
 
 
 //import About from "./components/About";
@@ -18,14 +19,30 @@ const About = lazy(() => import("./components/About"));
 const Grocery = lazy(() => import("./components/Grocery"));
 
 const AppLayout = () => {
+
+  const [loginName, setLoginName] = useState("");
+
+  useEffect(() => {
+    const data = {
+      name: ""
+    }
+    setLoginName(data.name);
+  }, []);
+
   return (
     <div className="text-center">
-      <Header />
 
-      {/* This Outlet element is replacing children elements */}
-      <Outlet />
+      <UserContext.Provider value={{ loggedInUser: loginName, setLoginName }}>
 
-      <Footer />
+        <Header />
+
+        {/* This Outlet element is replacing children elements */}
+        <Outlet />
+
+        <Footer />
+
+      </UserContext.Provider>
+
     </div>
   );
 };

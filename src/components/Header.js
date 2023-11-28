@@ -1,12 +1,14 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { LOGO_URL } from "../utils/constants";
 import { useNavigate, NavLink } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
+import UserContext from "../utils/UserContext";
 
 const Header = () => {
   const [btnState, setBtnstate] = useState("Logout");
   const onLineStatus = useOnlineStatus();
   const navigate = useNavigate();
+  const { loggedInUser } = useContext(UserContext);
 
   const ReturnHome = () => {
     navigate("");
@@ -33,8 +35,9 @@ const Header = () => {
           <li className="px-4 text-lg"><NavLink to={"contact"} style={navLinkStyle}>contact us</NavLink></li>
           <li className="px-4 text-lg"><NavLink to={"groceries"} style={navLinkStyle}>Grocery</NavLink></li>
           <li className="px-4 text-lg">cart</li>
+          <li className="px-4 text-lg font-bold">{loggedInUser}</li>
           <button
-            className="button-logIn-logOut"
+            className="button-logIn-logOut px-1 py-1 bg-slate-400 rounded-lg text-zinc-50"
             onClick={() =>
               btnState === "Logout"
                 ? setBtnstate("Login")

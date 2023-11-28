@@ -20,8 +20,8 @@ const User = (props) => {
             <h1>count: {count}</h1>
             <h3>Location: Kolkata </h3>
             <h4>Gmail: ghoshtamaghna6991@gmail.com</h4>
-            <button onClick={() => setCount(count + 1)}>Count Increase</button>
-            <button onClick={() => setCount(count > 0 ? count - 1 : 0)}>Count Decrease</button>
+            <button className="px-1 py-1 bg-slate-400 m-4 rounded-lg text-zinc-50" onClick={() => setCount(count + 1)}>Count Increase</button>
+            <button className="px-1 py-1 bg-slate-400 m-4 rounded-lg text-zinc-50" onClick={() => setCount(count > 0 ? count - 1 : 0)}>Count Decrease</button>
         </div>
     )
 }
