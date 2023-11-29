@@ -24,10 +24,12 @@ const AppLayout = () => {
 
   useEffect(() => {
     const data = {
-      name: ""
+      name: "Tell me what to write"
     }
     setLoginName(data.name);
   }, []);
+
+  console.log(loginName)
 
   return (
     <div className="text-center">
