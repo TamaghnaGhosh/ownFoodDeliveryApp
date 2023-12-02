@@ -10,6 +10,8 @@ import Contact from "./components/Contact";
 import Error from "./components/Error";
 import RestrurantMenuPage from "./components/RestrurantItems/RestrurantMenuPage";
 import UserContext from "./utils/UserContext";
+import { Provider } from "react-redux";
+import appStore from "./utils/appStore";
 
 
 //import About from "./components/About";
@@ -29,23 +31,19 @@ const AppLayout = () => {
     setLoginName(data.name);
   }, []);
 
-  console.log(loginName)
-
   return (
-    <div className="text-center">
-
+    <Provider store={appStore}>
       <UserContext.Provider value={{ loggedInUser: loginName, setLoginName }}>
+        <div className="text-center">
+          <Header />
 
-        <Header />
+          {/* This Outlet element is replacing children elements */}
+          <Outlet />
 
-        {/* This Outlet element is replacing children elements */}
-        <Outlet />
-
-        <Footer />
-
+          <Footer />
+        </div>
       </UserContext.Provider>
-
-    </div>
+    </Provider>
   );
 };
 

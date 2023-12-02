@@ -1,7 +1,21 @@
 import React from 'react'
 import { MENU_API_CDN_IMG } from '../../utils/constants'
+import { useDispatch, useSelector } from 'react-redux'
+import { addItem, removeItem } from '../../utils/cartSlice';
 
 const ItemMenuOfcards = ({ items }) => {
+
+    const dispatch = useDispatch();
+
+    const cartItems = useSelector((store) => store?.cart?.items);
+
+    const handleAddButton = (product) => {
+        dispatch(addItem(product))
+    }
+
+    const handleRemoveButton = (RmVproduct) => {
+        dispatch(removeItem(RmVproduct))
+    }
     return (
         <div>
             {items?.map((item) => (
@@ -16,7 +30,9 @@ const ItemMenuOfcards = ({ items }) => {
                     </div>
                     <div className='w-3/12 p-4'>
                         <div className='absolute'>
-                            <button className='p-2 mx-10 my-16 w-[100px] bg-white text-green-500 shadow-lg rounded-lg  object-cover border border-solid'>Add +</button>
+                            {cartItems?.find((cart) => cart?.card?.info?.id === item?.card?.info?.id) ? <button className='p-2 mx-10 my-16 w-[100px] bg-white text-green-500 shadow-lg rounded-lg  object-cover border border-solid' onClick={() => handleRemoveButton(item)}>
+                                Remove</button> : <button className='p-2 mx-10 my-16 w-[100px] bg-white text-green-500 shadow-lg rounded-lg  object-cover border border-solid' onClick={() => handleAddButton(item)}>
+                                Add +</button>}
                         </div>
                         <img src={`${MENU_API_CDN_IMG}${item?.card?.info?.imageId}`} className="w-[180] h-24 rounded-md object-cover border border-solid #f1c675" />
                     </div>

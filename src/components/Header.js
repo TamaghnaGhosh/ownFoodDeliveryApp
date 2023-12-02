@@ -3,6 +3,7 @@ import { LOGO_URL } from "../utils/constants";
 import { useNavigate, NavLink } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import UserContext from "../utils/UserContext";
+import { useSelector } from "react-redux";
 
 const Header = () => {
   const [btnState, setBtnstate] = useState("Logout");
@@ -10,13 +11,18 @@ const Header = () => {
   const navigate = useNavigate();
   const { loggedInUser } = useContext(UserContext);
 
+  // subscribing to the store using a selector
+  const cartItems = useSelector((store) => store?.cart?.items);
+
+  console.log(cartItems)
+
   const ReturnHome = () => {
     navigate("");
     window.location.reload(true)
   }
   const navLinkStyle = (props) => {
     const { isActive } = props;
-    // console.log(props)
+
     return {
       color: isActive ? "Red" : "black",
       textDecoration: isActive ? "none" : "none"
@@ -25,7 +31,7 @@ const Header = () => {
   return (
     <div className="flex items-center justify-between shadow-lg">
       <div className="logo-container">
-        <div onClick={() => ReturnHome()}><img className="w-36 cursor-pointer" src={LOGO_URL} /></div>
+        <div onClick={() => ReturnHome()}><img className="w-48 cursor-pointer" src={LOGO_URL} /></div>
       </div>
       <div className="flex items-center text-sl">
         <ul className="flex p-4 m-4">
@@ -34,7 +40,7 @@ const Header = () => {
           <li className="px-4 text-lg"><NavLink to={"about"} style={navLinkStyle}>About us</NavLink></li>
           <li className="px-4 text-lg"><NavLink to={"contact"} style={navLinkStyle}>contact us</NavLink></li>
           <li className="px-4 text-lg"><NavLink to={"groceries"} style={navLinkStyle}>Grocery</NavLink></li>
-          <li className="px-4 text-lg">cart</li>
+          <li className="px-4 text-lg"><span className="text-green-600">({cartItems.length})</span> cart</li>
           <li className="px-4 text-lg font-bold">{loggedInUser}</li>
           <button
             className="button-logIn-logOut px-1 py-1 bg-slate-400 rounded-lg text-zinc-50"

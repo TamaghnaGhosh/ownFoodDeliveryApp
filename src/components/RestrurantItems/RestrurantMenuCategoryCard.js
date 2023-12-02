@@ -2,8 +2,7 @@ import ItemMenuOfcards from './ItemMenuOfcards';
 const RestrurantMenuCategoryCard = ({ item, activeIndex, index, onItemClick }) => {
 
     const showItems = index === activeIndex;
-    console.log(showItems)
-    console.log(item?.title);
+    
     return (
         <div>
             {/* Header */}
