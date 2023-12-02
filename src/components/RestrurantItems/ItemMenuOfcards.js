@@ -30,8 +30,8 @@ const ItemMenuOfcards = ({ items }) => {
                     </div>
                     <div className='w-3/12 p-4'>
                         <div className='absolute'>
-                            {cartItems?.find((cart) => cart?.card?.info?.id === item?.card?.info?.id) ? <button className='p-2 mx-10 my-16 w-[100px] bg-white text-green-500 shadow-lg rounded-lg  object-cover border border-solid' onClick={() => handleRemoveButton(item)}>
-                                Remove</button> : <button className='p-2 mx-10 my-16 w-[100px] bg-white text-green-500 shadow-lg rounded-lg  object-cover border border-solid' onClick={() => handleAddButton(item)}>
+                            {cartItems?.find((cart) => cart?.card?.info?.id === item?.card?.info?.id) ? <button className='p-2 mx-10 my-16 w-[100px] bg-slate-600 text-white shadow-lg rounded-lg  object-cover border border-solid hover:bg-slate-400' onClick={() => handleRemoveButton(item)}>
+                                Remove</button> : <button className='p-2 mx-10 my-16 w-[100px] bg-white text-green-500 shadow-lg rounded-lg  object-cover border border-solid hover:bg-green-200' onClick={() => handleAddButton(item)}>
                                 Add +</button>}
                         </div>
                         <img src={`${MENU_API_CDN_IMG}${item?.card?.info?.imageId}`} className="w-[180] h-24 rounded-md object-cover border border-solid #f1c675" />
