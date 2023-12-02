@@ -40,7 +40,7 @@ const Header = () => {
           <li className="px-4 text-lg"><NavLink to={"about"} style={navLinkStyle}>About us</NavLink></li>
           <li className="px-4 text-lg"><NavLink to={"contact"} style={navLinkStyle}>contact us</NavLink></li>
           <li className="px-4 text-lg"><NavLink to={"groceries"} style={navLinkStyle}>Grocery</NavLink></li>
-          <li className="px-4 text-lg"><span className="text-green-600">({cartItems.length})</span> cart</li>
+          <li className="px-4 text-lg cursor-pointer"><span className="text-green-600">({cartItems.length})</span> cart</li>
           <li className="px-4 text-lg font-bold">{loggedInUser}</li>
           <button
             className="button-logIn-logOut px-1 py-1 bg-slate-400 rounded-lg text-zinc-50"
