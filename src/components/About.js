@@ -23,7 +23,7 @@ class About extends Component {
             <div className="About">
                 <h1>Hey About Page class base Component is here</h1>
                 <UserClass name={"class Componenet"} />
-                <User name={"functional Componeent"} />
+                {/* <User name={"functional Componeent"} /> */}
             </div>
 
         )
