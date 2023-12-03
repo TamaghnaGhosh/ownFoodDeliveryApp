@@ -9,9 +9,11 @@ import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import Contact from "./components/Contact";
 import Error from "./components/Error";
 import RestrurantMenuPage from "./components/RestrurantItems/RestrurantMenuPage";
+import Cart from "./components/Cart";
 import UserContext from "./utils/UserContext";
 import { Provider } from "react-redux";
 import appStore from "./utils/appStore";
+
 
 
 //import About from "./components/About";
@@ -63,6 +65,10 @@ const appLayout = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />
+      },
+      {
+        path: "/cart",
+        element: <Cart />
       },
       {
         path: "/groceries",

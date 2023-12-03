@@ -32,7 +32,11 @@ const RestrurantMenuPage = () => {
     const filterMenusByVegOnly = useFilterMenusByVegOnly(allTheCardItems);
 
     function filterMenusByVegOnlyFunc(allTheCardItems, filterMenusByVegOnly) {
+
         const clonedArray = JSON.parse(JSON.stringify(allTheCardItems));
+        //Es6 feature
+        // const clonedArray = structuredClone(allTheCardItems);
+        
         clonedArray.forEach((addItemCards, j) => {
             delete addItemCards.card.card.itemCards;
             filterMenusByVegOnly.forEach((addItemCardsVeg, i) => {
