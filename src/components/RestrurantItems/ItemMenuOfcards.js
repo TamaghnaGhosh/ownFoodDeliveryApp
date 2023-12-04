@@ -1,12 +1,13 @@
 import React from 'react'
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { MENU_API_CDN_IMG } from '../../utils/constants'
 import { useDispatch, useSelector } from 'react-redux'
 import { addItem, removeItem } from '../../utils/cartSlice';
 
 const ItemMenuOfcards = ({ items }) => {
     const location = useLocation();
-    console.log(location.pathname)
+    const navigate = useNavigate();
+
     const dispatch = useDispatch();
     const cartItems = useSelector((store) => store?.cart?.items);
 
@@ -15,6 +16,10 @@ const ItemMenuOfcards = ({ items }) => {
     }
     const handleRemoveButton = (RmVproduct) => {
         dispatch(removeItem(RmVproduct))
+    }
+
+    const goToCart = () => {
+        navigate('/cart');
     }
     return (
         <div>
@@ -36,8 +41,11 @@ const ItemMenuOfcards = ({ items }) => {
                             </button>
                             {/* {(cartItems?.find((cart) => cart?.card?.info?.id === item?.card?.info?.id) ?
                                 <button className='p-2 mx-10 my-16 w-[100px] bg-slate-600 text-white shadow-lg rounded-lg  object-cover border border-solid hover:bg-slate-400'
-                                    onClick={() => handleRemoveButton(item)}>
-                                    Remove</button> : <button className='p-2 mx-10 my-16 w-[100px] bg-white text-green-500 shadow-lg rounded-lg  object-cover border border-solid hover:bg-green-200'
+                                    onClick={() => {
+                                        goToCart();
+                                        // handleRemoveButton(item);
+                                    }}>
+                                    Go To bag</button> : <button className='p-2 mx-10 my-16 w-[100px] bg-white text-green-500 shadow-lg rounded-lg  object-cover border border-solid hover:bg-green-200'
                                         onClick={() => handleAddButton(item)}>
                                     Add +</button>)} */}
                         </div>
