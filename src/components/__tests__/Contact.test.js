@@ -9,7 +9,7 @@ test('should load contanct us componet', () => {
     const heading = screen.getByRole("heading");
 
     // Assertion
-    expect(heading).toBeInTheDocument();
+    expect(heading).toBeInTheDocument()
 });
 
 test('should load button inside contanct us componet', () => {
@@ -18,7 +18,7 @@ test('should load button inside contanct us componet', () => {
     const button = screen.getByRole("button");
 
     // Assertion
-   expect(button).toBeInTheDocument()
+    expect(button).toBeInTheDocument()
 });
 
 test('should load 2 input boxes on the contanct us componet', () => {
