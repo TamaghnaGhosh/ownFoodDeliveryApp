@@ -14,7 +14,7 @@ const Header = () => {
   // subscribing to the store using a selector
   const cartItems = useSelector((store) => store?.cart?.items);
 
-  console.log(cartItems)
+  // console.log(cartItems)
 
   const ReturnHome = () => {
     navigate("");
