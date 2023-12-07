@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { CDN_URL } from "../utils/constants";
 import UserContext from "../utils/UserContext";
-const ResrtrurantContainer = (props) => {
+const ResrtrurantCard = (props) => {
   const { name, cuisines, ...otherProps } = props?.resData?.info;
 
   const { loggedInUser } = useContext(UserContext);
@@ -21,14 +21,14 @@ const ResrtrurantContainer = (props) => {
     </div>
   );
 };
-export const WithLabelTopRatedRestrurants = (ResrtrurantContainer) => {
+export const WithLabelTopRatedRestrurants = (ResrtrurantCard) => {
   return (props) => {
     return (
       <>
         <label className="absolute bg-slate-600 text-white rounded-lg m-2 p-1">Popular Restaurant</label>
-        <ResrtrurantContainer {...props} />
+        <ResrtrurantCard {...props} />
       </>
     );
   };
 };
-export default ResrtrurantContainer;
+export default ResrtrurantCard;

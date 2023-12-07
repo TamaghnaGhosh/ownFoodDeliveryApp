@@ -1,4 +1,4 @@
-import ResrtrurantContainer, { WithLabelTopRatedRestrurants } from "./ResrtrurantCard";
+import ResrtrurantCard, { WithLabelTopRatedRestrurants } from "./ResrtrurantCard";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
@@ -16,7 +16,7 @@ const Body = () => {
 
   // console.log(filterRestrurantS);
 
-  const TopRatedHigherOrderComponents = WithLabelTopRatedRestrurants(ResrtrurantContainer);
+  const TopRatedHigherOrderComponents = WithLabelTopRatedRestrurants(ResrtrurantCard);
 
   //check internet connectivity customs hook/conditional Rendering
   if (onLineStatus === false) return <h1>Please check the internet connection in your system</h1>;
@@ -92,7 +92,7 @@ const Body = () => {
             {resDataObj?.info?.avgRating > 4.3 ? (
               <TopRatedHigherOrderComponents resData={resDataObj} />
             ) : (
-              <ResrtrurantContainer resData={resDataObj} />
+              <ResrtrurantCard resData={resDataObj} />
             )}
           </Link>
         ))}

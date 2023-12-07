@@ -87,4 +87,8 @@ const appLayout = createBrowserRouter([
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(<RouterProvider router={appLayout} />);
+root.render(
+  <React.StrictMode>
+    <RouterProvider router={appLayout} />
+  </React.StrictMode>
+);
