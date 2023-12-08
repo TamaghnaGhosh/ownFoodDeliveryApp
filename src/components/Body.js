@@ -11,7 +11,10 @@ const Body = () => {
 
   //check internet connectivity customs hook
   const onLineStatus = useOnlineStatus();
+
   const { loggedInUser, setLoginName } = useContext(UserContext);
+  
+  // useFetchRestrurants custom hooks
   const { filterRestrurantS, setFilterResturantS, fetchResturants, searchText, setSearchText } = useFetchRestrurants();
 
   // console.log(filterRestrurantS);
@@ -27,6 +30,13 @@ const Body = () => {
     setFilterResturantS(upadatedReslist);
   };
 
+  const onKeyUpSearchField = (e) => {
+    if (e.keyCode === 13) {
+      e.preventDefault();
+      document.getElementById("searchBtn").click();
+    }
+  }
+
   return (filterRestrurantS?.length === 0 || filterRestrurantS === undefined) ? (
     <Shimmer />
   ) : (
@@ -39,10 +49,12 @@ const Body = () => {
             placeholder="Search Resturants"
             name="search"
             autoComplete="false"
+            onKeyUp={onKeyUpSearchField}
             onChange={(e) => setSearchText(e.target.value)}
             value={searchText}
           />
           <button
+            id="searchBtn"
             className="px-4 py-1 bg-slate-400 m-4 rounded-lg text-zinc-50"
             onClick={() => {
               const filterRestrurant = filterRestrurantS?.filter((res) =>

@@ -10,4 +10,4 @@ export const MENU_API_CDN_IMG = 'https://media-assets.swiggy.com/swiggy/image/up
 
 export const lat_Lng_headers = { 'X-Api-Key': "Hob9OIbOqhjXm04mpvOIsg==idIs0HBzOS4hwdie" };
 
-export const lat_Lng_URL = 'https://api.api-ninjas.com/v1/geocoding?city={city}';
+export const lat_Lng_URL = 'https://api.api-ninjas.com/v1/geocoding?city={city}&country={country}';
