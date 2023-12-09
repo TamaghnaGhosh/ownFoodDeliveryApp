@@ -1,0 +1,3265 @@
+{
+  "statusCode": 0,
+  "data": {
+    "statusMessage": "done successfully",
+    "cards": [
+      {
+        "card": {
+          "card": {
+            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+            "info": {
+              "id": "280216",
+              "name": "Lavonne",
+              "city": "Bangalore",
+              "slugs": {
+                "restaurant": "lavonne-indiranagar-indiranagar",
+                "city": "bangalore"
+              },
+              "uniqueId": "e51e6528-4859-48c8-8fed-e84c17dc2d76",
+              "cloudinaryImageId": "udzufnegmtvimdypnfbk",
+              "locality": "Indiranagar",
+              "areaName": "Indiranagar",
+              "costForTwo": "100000",
+              "costForTwoMessage": "₹1000 for two",
+              "cuisines": ["Bakery", "Desserts"],
+              "avgRating": 4.5,
+              "feeDetails": {
+                "restaurantId": "280216",
+                "fees": [
+                  {
+                    "name": "distance",
+                    "fee": 6400
+                  },
+                  {
+                    "name": "time"
+                  },
+                  {
+                    "name": "special"
+                  }
+                ],
+                "totalFee": 6400,
+                "icon": "v1648208530/surgecreatives/info",
+                "message": "Far (5 kms) | Additional delivery fee will apply"
+              },
+              "parentId": "10530",
+              "avgRatingString": "4.5",
+              "totalRatingsString": "5K+ ratings",
+              "sla": {
+                "restaurantId": "280216",
+                "deliveryTime": 30,
+                "minDeliveryTime": 30,
+                "maxDeliveryTime": 30,
+                "lastMileTravel": 5,
+                "serviceability": "SERVICEABLE",
+                "stressFactor": 1,
+                "rainMode": "RAIN_MODE_NONE",
+                "longDistance": "LONG_DISTANCE_IT_IS_LONG_DISTANCE",
+                "zoneId": 2,
+                "slaString": "30 MINS",
+                "lastMileTravelString": "5.0 km",
+                "iconType": "ICON_TYPE_EMPTY"
+              },
+              "availability": {
+                "nextCloseTime": "2023-12-09 22:40:00",
+                "visibility": true,
+                "opened": true,
+                "restaurantClosedMeta": {}
+              },
+              "aggregatedDiscountInfo": {
+                "shortDescriptionList": [
+                  {
+                    "discountType": "Flat",
+                    "operationType": "RESTAURANT"
+                  },
+                  {
+                    "discountType": "Percentage",
+                    "operationType": "RESTAURANT"
+                  }
+                ],
+                "descriptionList": [
+                  {
+                    "meta": "Flat ₹75 off | Above ₹600",
+                    "discountType": "Flat",
+                    "operationType": "RESTAURANT"
+                  },
+                  {
+                    "meta": "15% off upto ₹300 | Use CITIFOODIE Above ₹1200",
+                    "discountType": "Percentage",
+                    "operationType": "RESTAURANT"
+                  }
+                ],
+                "visible": true
+              },
+              "badges": {},
+              "slugString": "lavonne-indiranagar-indiranagar",
+              "multiOutlet": true,
+              "isOpen": true,
+              "labels": [
+                {
+                  "title": "Timings",
+                  "message": "null"
+                },
+                {
+                  "title": "Address",
+                  "message": "2nd Phase, #263, 3rd Cross Rd, Stage 2, Domlur, Bengaluru, Karnataka 560071"
+                },
+                {
+                  "title": "Cuisines",
+                  "message": "Bakery,Desserts"
+                }
+              ],
+              "logo": "v1642740559/G%20header%20logos/Lavonne.png",
+              "totalRatings": 5000,
+              "aggregatedDiscountInfoV2": {
+                "shortDescriptionList": [
+                  {
+                    "discountType": "Flat",
+                    "operationType": "RESTAURANT"
+                  },
+                  {
+                    "discountType": "Percentage",
+                    "operationType": "RESTAURANT"
+                  }
+                ],
+                "descriptionList": [
+                  {
+                    "meta": "Flat ₹75 off | Above ₹600",
+                    "discountType": "Flat",
+                    "operationType": "RESTAURANT"
+                  },
+                  {
+                    "meta": "15% off upto ₹300 | Use CITIFOODIE Above ₹1200",
+                    "discountType": "Percentage",
+                    "operationType": "RESTAURANT"
+                  }
+                ],
+                "couponDetailsCta": "View coupon details"
+              },
+              "type": "F",
+              "headerBanner": {
+                "url": "swiggy://webview?is_external=false&webview_url=https://www.swiggy.com/restaurant-info/280216"
+              },
+              "expectationNotifiers": [
+                {
+                  "text": "Far (5 kms) | Additional delivery fee will apply",
+                  "icon": {
+                    "imageId": "v1648208530/surgecreatives/info"
+                  },
+                  "popup": {
+                    "cta": {}
+                  },
+                  "type": "DISTANCE_FEE_NON_FOOD_LM",
+                  "enrichedText": "<b>Far (5 kms)</b> | Additional delivery fee will apply",
+                  "halfCardPopup": {
+                    "halfCardPopupHeader": {}
+                  }
+                }
+              ],
+              "generalPurposeInfoListV2": [
+                {
+                  "cta": {
+                    "info": {
+                      "recordings": {}
+                    },
+                    "linkCta": {}
+                  }
+                }
+              ],
+              "ratingSlab": "RATING_SLAB_5",
+              "restaurantCategory": "RESTAURANT_CATEGORY_GOURMET",
+              "backgroundImage": "v1641894907/gourmet%20menu%20header/Lavonne.png",
+              "orderabilityCommunication": {
+                "title": {},
+                "subTitle": {},
+                "message": {},
+                "customIcon": {}
+              },
+              "hasBestsellerItems": true,
+              "hasGuiltfreeItems": true,
+              "brandHeaderText": "Home of iconic European delicacies...",
+              "cartOrderabilityNudgeBanner": {
+                "parameters": {},
+                "presentation": {}
+              },
+              "latLong": "12.96695,77.636887"
+            },
+            "analytics": {}
+          },
+          "relevance": {
+            "type": "RELEVANCE_TYPE_CHECK_ORDERABILITY_ON_ITEM_ADD",
+            "sectionId": "POP_UP_CROUTON_MENU"
+          }
+        }
+      },
+      {
+        "card": {
+          "card": {
+            "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.GridWidget",
+            "layout": {
+              "rows": 1,
+              "columns": 5,
+              "horizontalScrollEnabled": true,
+              "itemSpacing": 12,
+              "lineSpacing": 10,
+              "widgetPadding": {},
+              "containerStyle": {
+                "containerPadding": {
+                  "left": 10,
+                  "right": 10,
+                  "bottom": 16
+                }
+              },
+              "scrollBar": {}
+            },
+            "id": "offerCollectionWidget_UX4",
+            "gridElements": {
+              "infoWithStyle": {
+                "@type": "type.googleapis.com/swiggy.presentation.food.v2.OfferInfoWithStyle",
+                "offers": [
+                  {
+                    "info": {
+                      "header": "FLAT ₹75 OFF",
+                      "offerTagColor": "#E46D47",
+                      "logoBottom": "rng/md/ads/production/cd60f23dc2ac83be906d0f6ba55d3d12",
+                      "offerIds": ["6d4ea81d-561e-45e0-a8c7-698ec0ffdb63"],
+                      "expiryTime": "1970-01-01T00:00:00Z",
+                      "couponCode": "NO CODE REQUIRED",
+                      "description": "ABOVE ₹600",
+                      "offerType": "offers",
+                      "restId": "280216",
+                      "offerLogo": "rng/md/ads/production/cd60f23dc2ac83be906d0f6ba55d3d12",
+                      "descriptionTextColor": "#7302060C"
+                    },
+                    "cta": {
+                      "type": "OFFER_HALF_CARD"
+                    }
+                  },
+                  {
+                    "info": {
+                      "header": "FLAT ₹75 OFF",
+                      "offerTagColor": "#E46D47",
+                      "logoBottom": "rng/md/ads/production/cd60f23dc2ac83be906d0f6ba55d3d12",
+                      "offerIds": ["252c29e6-e177-4867-a1d1-242f9009557c"],
+                      "expiryTime": "1970-01-01T00:00:00Z",
+                      "couponCode": "NO CODE REQUIRED",
+                      "description": "ABOVE ₹600",
+                      "offerType": "offers",
+                      "restId": "280216",
+                      "offerLogo": "rng/md/ads/production/cd60f23dc2ac83be906d0f6ba55d3d12",
+                      "descriptionTextColor": "#7302060C"
+                    },
+                    "cta": {
+                      "type": "OFFER_HALF_CARD"
+                    }
+                  },
+                  {
+                    "info": {
+                      "header": "15% OFF UPTO ₹300",
+                      "offerTagColor": "#E46D47",
+                      "logoBottom": "rng/md/ads/production/15fb1cfe885005447dc8375e7970600f",
+                      "offerIds": ["c5a49660-022b-4e55-9a06-0f92550f3218"],
+                      "expiryTime": "1970-01-01T00:00:00Z",
+                      "couponCode": "USE CITIFOODIE",
+                      "description": "ABOVE ₹1200",
+                      "offerType": "offers",
+                      "restId": "280216",
+                      "offerLogo": "rng/md/ads/production/15fb1cfe885005447dc8375e7970600f",
+                      "descriptionTextColor": "#7302060C"
+                    },
+                    "cta": {
+                      "type": "OFFER_HALF_CARD"
+                    }
+                  },
+                  {
+                    "info": {
+                      "header": "FLAT ₹150 OFF",
+                      "offerTagColor": "#E46D47",
+                      "logoBottom": "rng/md/ads/production/59ef5e58052532ad85a185bf516eccce",
+                      "offerIds": ["0a33ca5c-5efd-4ce1-942f-5d2a0914a80a"],
+                      "expiryTime": "1970-01-01T00:00:00Z",
+                      "couponCode": "USE AMEX150",
+                      "description": "ABOVE ₹600",
+                      "offerType": "offers",
+                      "restId": "280216",
+                      "offerLogo": "rng/md/ads/production/59ef5e58052532ad85a185bf516eccce",
+                      "descriptionTextColor": "#7302060C"
+                    },
+                    "cta": {
+                      "type": "OFFER_HALF_CARD"
+                    }
+                  },
+                  {
+                    "info": {
+                      "header": "FLAT ₹120 OFF",
+                      "offerTagColor": "#E46D47",
+                      "logoBottom": "rng/md/ads/production/32b9f8a87957f8c1ca369622f6a1ca77",
+                      "offerIds": ["291c01aa-a191-457a-87bc-bff3755230c2"],
+                      "expiryTime": "1970-01-01T00:00:00Z",
+                      "couponCode": "USE AXIS120",
+                      "description": "ABOVE ₹500",
+                      "offerType": "offers",
+                      "restId": "280216",
+                      "offerLogo": "rng/md/ads/production/32b9f8a87957f8c1ca369622f6a1ca77",
+                      "descriptionTextColor": "#7302060C"
+                    },
+                    "cta": {
+                      "type": "OFFER_HALF_CARD"
+                    }
+                  }
+                ],
+                "habitMilestoneInfo": {
+                  "callout": {}
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "groupedCard": {
+          "cardGroupMap": {
+            "REGULAR": {
+              "cards": [
+                {
+                  "card": {
+                    "card": {
+                      "@type": "type.googleapis.com/swiggy.presentation.food.v2.MenuVegFilterAndBadge",
+                      "badges": {},
+                      "vegOnlyDetails": {
+                        "imageId": "AutoVegOnly_qkjowj",
+                        "title": "Showing only vegetarian options.",
+                        "description": "Tap on the VEG ONLY button to turn off the setting"
+                      },
+                      "topRatedFilter": {},
+                      "kidsCategoryFilter": {
+                        "attributes": {
+                          "displayText": "Kids Favourites",
+                          "tooltip": {
+                            "enabled": true,
+                            "displayText": "Kids Favourites Filter applied. Remove this filter to see the full Menu."
+                          }
+                        }
+                      },
+                      "vegFilter": {
+                        "attributes": {
+                          "displayText": "VEG"
+                        }
+                      },
+                      "nonvegFilter": {
+                        "attributes": {
+                          "displayText": "NONVEG"
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "card": {
+                    "card": {
+                      "@type": "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                      "title": "Christmas",
+                      "itemCards": [
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "106946804",
+                              "name": "Inclusion Fruit & Nut Bar",
+                              "category": "Christmas",
+                              "imageId": "3ae173522758987372fe227fefe742d5",
+                              "inStock": 1,
+                              "isVeg": 1,
+                              "price": 65000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "VEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              }
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "80110265",
+                              "name": "Mince Pie",
+                              "category": "Christmas",
+                              "description": "Short crust tart filled with soaked fruits and spices. ",
+                              "imageId": "db0e8427158308d60ea728019b65ec4b",
+                              "inStock": 1,
+                              "price": 35000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "NONVEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              }
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "106946803",
+                              "name": "Fruit & Nut Cake",
+                              "category": "Christmas",
+                              "description": "A dense cake loaded with nuts and dry fruits. ",
+                              "imageId": "749f690a6ab189625dc7e50a661ebcc4",
+                              "inStock": 1,
+                              "price": 140000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "NONVEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              }
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "106946806",
+                              "name": "Orange & Chocolate Tea Cake",
+                              "category": "Christmas",
+                              "description": "A dense cake with the richness of chocolate and orange marmalade, glazed with dark gourmand dip. ",
+                              "imageId": "061df57e06179b91253e13ed0026be01",
+                              "inStock": 1,
+                              "price": 120000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "NONVEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              }
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "106946801",
+                              "name": "Dresden Stollen (380g)",
+                              "category": "Christmas",
+                              "description": "Fruit bread with cake like texture. It contains yeast and flavour imparting zest and spices. Dipped in clarified butter and coated with icing sugar. ",
+                              "imageId": "7ab85c65a7d01af8e7c513354df4fb77",
+                              "inStock": 1,
+                              "price": 115000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "NONVEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              }
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "106946802",
+                              "name": "Dundee Cake (500g)",
+                              "category": "Christmas",
+                              "description": "Creaming method type of pound cake. Orignally from scotland. Topped with almonds. ",
+                              "imageId": "334512b6a71bfb2f93740bf78d5d62d9",
+                              "inStock": 1,
+                              "price": 120000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "NONVEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              }
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "106946809",
+                              "name": "Plum Cake (500g)",
+                              "category": "Christmas",
+                              "description": "Originally from england,the delicasy of christmas. It is a rich cake made of soaked fruits and spices. Does not contain plum. ",
+                              "imageId": "41a07ae865f7b59f001f6f194e209f9e",
+                              "inStock": 1,
+                              "price": 120000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "NONVEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              }
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "106946807",
+                              "name": "Plum Cake (1kg)",
+                              "category": "Christmas",
+                              "description": "Originally from england,the delicasy of christmas. It is a rich cake made of soaked fruits and spices. Does not contain plum. ",
+                              "inStock": 1,
+                              "price": 210000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "NONVEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              }
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "107085603",
+                              "name": "Plum Pudding (300g)",
+                              "category": "Christmas",
+                              "imageId": "da626c5a3ac077b0780008d551f760b0",
+                              "inStock": 1,
+                              "price": 90000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "NONVEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              }
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "106946805",
+                              "name": "Kugelhopf",
+                              "category": "Christmas",
+                              "description": "Originally from germany, includes raisins and almonds. Dipped in clarified butter and coated with caster sugar. Contains yeast. ",
+                              "imageId": "bab8e6bd27dd8bb79a0a70ead0afae1e",
+                              "inStock": 1,
+                              "price": 60000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "NONVEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              }
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "106946799",
+                              "name": "Almond Cherry Florentine",
+                              "category": "Christmas",
+                              "description": "Sugar and honey candy containing almond flakes and candied cherries. ",
+                              "imageId": "dd74b218d81fc0afbf3bfc1c151126d9",
+                              "inStock": 1,
+                              "isVeg": 1,
+                              "price": 60000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "VEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              }
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "107085604",
+                              "name": "Truffles",
+                              "category": "Christmas",
+                              "description": "Box of lime and coconut(2), chocolate cherry(1) and coffee(2). ",
+                              "imageId": "97bc180ef407d3c7f423d88335c5c2ae",
+                              "inStock": 1,
+                              "isVeg": 1,
+                              "price": 65000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "VEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              }
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "107085602",
+                              "name": "Stollen Croissant (01 Nos)",
+                              "category": "Christmas",
+                              "description": "Plum fruits and delicious marzipan enclosed within croissant dough, dipped in lemony clarified butter. ",
+                              "imageId": "92367768d299b32dae2cb3cb6a158d78",
+                              "inStock": 1,
+                              "price": 24000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "NONVEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              }
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "card": {
+                    "card": {
+                      "@type": "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                      "title": "Bakery",
+                      "itemCards": [
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "97461883",
+                              "name": "Pain Au Chocolat",
+                              "category": "Bakery",
+                              "description": "Fresh baked croissant inserted with dark couverture chocolate batons. ",
+                              "imageId": "ugrj9pseotjva2jtgrne",
+                              "inStock": 1,
+                              "price": 22000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "NONVEG"
+                              },
+                              "ribbon": {
+                                "text": "Bestseller",
+                                "textColor": "#ffffff",
+                                "topBackgroundColor": "#d53d4c",
+                                "bottomBackgroundColor": "#b02331"
+                              },
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "isBestseller": true,
+                              "ratings": {
+                                "aggregatedRating": {
+                                  "rating": "4.7",
+                                  "ratingCount": "113 ratings",
+                                  "ratingCountV2": "113"
+                                }
+                              }
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "67495797",
+                              "name": "Almond Croissant",
+                              "category": "Bakery",
+                              "description": "Rich and buttery croissant filled with a sweet frangipan and topped with toasted almond flakes. ",
+                              "imageId": "megyy5cmso4ufk3b7dsn",
+                              "inStock": 1,
+                              "price": 22000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "NONVEG"
+                              },
+                              "ribbon": {
+                                "text": "Bestseller",
+                                "textColor": "#ffffff",
+                                "topBackgroundColor": "#d53d4c",
+                                "bottomBackgroundColor": "#b02331"
+                              },
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "isBestseller": true,
+                              "ratings": {
+                                "aggregatedRating": {
+                                  "rating": "4.6",
+                                  "ratingCount": "415 ratings",
+                                  "ratingCountV2": "415"
+                                }
+                              }
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "97461870",
+                              "name": "Caramelised Milk Chocolate Croissant",
+                              "category": "Bakery",
+                              "description": "Freshly baked croissant with luscious dulce filling and dipped into gourmand milk chocolate and almonds. ",
+                              "imageId": "a4598aaad629918959ee32061ff10116",
+                              "inStock": 1,
+                              "price": 22000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "NONVEG"
+                              },
+                              "ribbon": {
+                                "text": "Bestseller",
+                                "textColor": "#ffffff",
+                                "topBackgroundColor": "#d53d4c",
+                                "bottomBackgroundColor": "#b02331"
+                              },
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "isBestseller": true,
+                              "ratings": {
+                                "aggregatedRating": {
+                                  "rating": "4.8",
+                                  "ratingCount": "127 ratings",
+                                  "ratingCountV2": "127"
+                                }
+                              }
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "97461871",
+                              "name": "Cinnamon Roll",
+                              "category": "Bakery",
+                              "description": "Classic sweet sticky roll made using croissant dough and mildly spiced with cinnamon. ",
+                              "imageId": "qpwwvowznonmafzckzhl",
+                              "inStock": 1,
+                              "price": 22000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "NONVEG"
+                              },
+                              "ribbon": {
+                                "text": "Bestseller",
+                                "textColor": "#ffffff",
+                                "topBackgroundColor": "#d53d4c",
+                                "bottomBackgroundColor": "#b02331"
+                              },
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "isBestseller": true,
+                              "ratings": {
+                                "aggregatedRating": {
+                                  "rating": "4.5",
+                                  "ratingCount": "97 ratings",
+                                  "ratingCountV2": "97"
+                                }
+                              }
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "97461863",
+                              "name": "Golden Milk & Lemon Coconut Beignets",
+                              "category": "Bakery",
+                              "description": "Soft and delectable golden milk berliner stuffed with lemon coconut chantilly",
+                              "imageId": "8c2eadf6bab7b629cde71234beb916d9",
+                              "inStock": 1,
+                              "price": 21000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "NONVEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {
+                                  "rating": "4.9",
+                                  "ratingCount": "86 ratings",
+                                  "ratingCountV2": "86"
+                                }
+                              }
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "97461840",
+                              "name": "Coffee & Milk Berliner",
+                              "category": "Bakery",
+                              "description": "Berliner stuffed with coffee milk chocolate cream and glazed with dark chocolate gourmand. ",
+                              "imageId": "4150ecc8c3903384cbd66ea8c567b186",
+                              "inStock": 1,
+                              "price": 20000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "NONVEG"
+                              },
+                              "ribbon": {
+                                "text": "Bestseller",
+                                "textColor": "#ffffff",
+                                "topBackgroundColor": "#d53d4c",
+                                "bottomBackgroundColor": "#b02331"
+                              },
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "isBestseller": true,
+                              "ratings": {
+                                "aggregatedRating": {
+                                  "rating": "4.3",
+                                  "ratingCount": "107 ratings",
+                                  "ratingCountV2": "107"
+                                }
+                              }
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "97461910",
+                              "name": "Banana Tea Cake",
+                              "category": "Bakery",
+                              "description": "Soft and moist tea cake made with the magical combination of bananas and walnuts. ",
+                              "imageId": "k5vubzkka0jzb5lo7kxc",
+                              "inStock": 1,
+                              "price": 25000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "NONVEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {
+                                  "rating": "4.7",
+                                  "ratingCount": "47 ratings",
+                                  "ratingCountV2": "47"
+                                }
+                              }
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "97461868",
+                              "name": "Barbecue Feta Danish",
+                              "category": "Bakery",
+                              "description": "Layered croissant dough filled with barbeque tomatoes and caramelised onion and topped with fresh feta. ",
+                              "imageId": "wwi36zncydqtmm5dmmqf",
+                              "inStock": 1,
+                              "price": 22000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "NONVEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {
+                                  "rating": "4.4",
+                                  "ratingCount": "32 ratings",
+                                  "ratingCountV2": "32"
+                                }
+                              }
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "97461851",
+                              "name": "Jalapeno & Cheddar Fondue Berliner",
+                              "category": "Bakery",
+                              "description": "Delectable berliner stuffed with melted cheddar cheese fondue and pickled jalapenos, topped off with fried onions",
+                              "imageId": "i5dtn8dpfi8f8act7qrz",
+                              "inStock": 1,
+                              "price": 20000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "NONVEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {
+                                  "rating": "4.5",
+                                  "ratingCount": "28 ratings",
+                                  "ratingCountV2": "28"
+                                }
+                              }
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "97461867",
+                              "name": "Creamy Chicken Calzone",
+                              "category": "Bakery",
+                              "description": "Oven baked fold pizza stuffed with a creamy chicken, garnished with italian seasoning and crispy chicken floss. ",
+                              "imageId": "jg7vtwqztlbwq51ivdwj",
+                              "inStock": 1,
+                              "price": 22000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "NONVEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {
+                                  "rating": "4.4",
+                                  "ratingCount": "35 ratings",
+                                  "ratingCountV2": "35"
+                                }
+                              }
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "123734766",
+                              "name": "Multigrain Guava Perad Croissant",
+                              "category": "Bakery",
+                              "description": "Multigrain croissant cube filled with guava, cream cheese and topped with guava perad. ",
+                              "imageId": "6f3568648ebf4b6a0fe7fe1351c03747",
+                              "inStock": 1,
+                              "price": 22000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "NONVEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              }
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "123734769",
+                              "name": "Pain Suisse",
+                              "category": "Bakery",
+                              "description": "A swiss delicacy of laminated dough filled with custard, crumble, and glazed with nannari syrup. ",
+                              "imageId": "41ac3176ccee46c51506d1200c5e356a",
+                              "inStock": 1,
+                              "price": 23000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "NONVEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {
+                                  "rating": "3.4",
+                                  "ratingCount": "4 ratings",
+                                  "ratingCountV2": "4"
+                                }
+                              }
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "123734772",
+                              "name": "Porky Puff",
+                              "category": "Bakery",
+                              "description": "Puff pastry stuffed with slow cooked 5 spice pork. ",
+                              "imageId": "a41abfcc3a9ed3c0527fd2c7fc547dc2",
+                              "price": 23000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "nextAvailableAtMessage": "Next available at 8:30 am, tomorrow",
+                              "itemAttribute": {
+                                "vegClassifier": "NONVEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {
+                                  "rating": "4.8",
+                                  "ratingCount": "10 ratings",
+                                  "ratingCountV2": "10"
+                                }
+                              }
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "card": {
+                    "card": {
+                      "@type": "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                      "title": "Breads",
+                      "itemCards": [
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "97461902",
+                              "name": "Sourdough Bread Plain",
+                              "category": "Breads",
+                              "description": "Slow fermented and artisanal crafted, crusty and flavourful bread. ",
+                              "imageId": "218d7f53e3b244bf9a10d6ec69be695b",
+                              "inStock": 1,
+                              "isVeg": 1,
+                              "price": 23000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "VEG"
+                              },
+                              "ribbon": {
+                                "text": "Bestseller",
+                                "textColor": "#ffffff",
+                                "topBackgroundColor": "#d53d4c",
+                                "bottomBackgroundColor": "#b02331"
+                              },
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "isBestseller": true,
+                              "isGuiltfree": true,
+                              "ratings": {
+                                "aggregatedRating": {
+                                  "rating": "4.6",
+                                  "ratingCount": "73 ratings",
+                                  "ratingCountV2": "73"
+                                }
+                              }
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "97461928",
+                              "name": "Sourdough Bread Turmeric Walnut And Flax Seeds",
+                              "category": "Breads",
+                              "description": "Slow fermented and artisanal crafted, crusty bread with flavours of turmeric, walnuts and flaxseed. ",
+                              "imageId": "e4m5qqo212jhmwxhcz3f",
+                              "inStock": 1,
+                              "isVeg": 1,
+                              "price": 25000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "VEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "isGuiltfree": true,
+                              "ratings": {
+                                "aggregatedRating": {
+                                  "rating": "4.9",
+                                  "ratingCount": "19 ratings",
+                                  "ratingCountV2": "19"
+                                }
+                              }
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "62561229",
+                              "name": "Baguette",
+                              "category": "Breads",
+                              "description": "Freshly baked french bread that is soft and porous on the inside while hard and crusty on the outside. ",
+                              "imageId": "mhxrmbl8u1iayeko1cac",
+                              "inStock": 1,
+                              "isVeg": 1,
+                              "price": 20000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "VEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {
+                                  "rating": "4.8",
+                                  "ratingCount": "91 ratings",
+                                  "ratingCountV2": "91"
+                                }
+                              }
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "88784761",
+                              "name": "Multigrain Sandwich Jr",
+                              "category": "Breads",
+                              "description": "Made with the goodness of whole wheat and a whole lot of multigrain, it is still rich, buttery and flaky. ",
+                              "imageId": "kjv7an8rzlyypmce0lpv",
+                              "inStock": 1,
+                              "isVeg": 1,
+                              "price": 15000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "VEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "isGuiltfree": true,
+                              "ratings": {
+                                "aggregatedRating": {
+                                  "rating": "4.8",
+                                  "ratingCount": "29 ratings",
+                                  "ratingCountV2": "29"
+                                }
+                              }
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "97461922",
+                              "name": "Multigrain Sandwich",
+                              "category": "Breads",
+                              "description": "Made with the goodness of whole wheat and a whole lot of multigrain, it is still rich, buttery and flaky. ",
+                              "imageId": "ztlrtlrusiyub7bs87cb",
+                              "inStock": 1,
+                              "isVeg": 1,
+                              "price": 25000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "VEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "isGuiltfree": true,
+                              "ratings": {
+                                "aggregatedRating": {
+                                  "rating": "4.4",
+                                  "ratingCount": "10 ratings",
+                                  "ratingCountV2": "10"
+                                }
+                              }
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "97461832",
+                              "name": "Milk Bread Jr",
+                              "category": "Breads",
+                              "description": "Freshly baked and uncut loaf perfect for your everyday sandwich. ",
+                              "imageId": "997c5ce1c83e256a2f235ec02beeeb9f",
+                              "inStock": 1,
+                              "price": 14000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "NONVEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {
+                                  "rating": "4.9",
+                                  "ratingCount": "32 ratings",
+                                  "ratingCountV2": "32"
+                                }
+                              }
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "97461889",
+                              "name": "Milk Bread",
+                              "category": "Breads",
+                              "description": "Freshly baked and uncut loaf perfect for your everyday sandwich. ",
+                              "imageId": "cieovvwlz03uvtodhfc1",
+                              "inStock": 1,
+                              "price": 22000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "NONVEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {
+                                  "rating": "4.5",
+                                  "ratingCount": "24 ratings",
+                                  "ratingCountV2": "24"
+                                }
+                              }
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "88784747",
+                              "name": "Cranberry Orange Millet Whole Wheat Loaf",
+                              "category": "Breads",
+                              "description": "Super healthy bread loaded with the goodness of whole wheat, dried cranberries, orange marmalade and ragi millet. ",
+                              "imageId": "ufteel6iu94i2tj8n1aq",
+                              "inStock": 1,
+                              "isVeg": 1,
+                              "price": 25000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "VEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "isGuiltfree": true,
+                              "ratings": {
+                                "aggregatedRating": {
+                                  "rating": "4.4",
+                                  "ratingCount": "15 ratings",
+                                  "ratingCountV2": "15"
+                                }
+                              }
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "card": {
+                    "card": {
+                      "@type": "type.googleapis.com/swiggy.presentation.food.v2.NestedItemCategory",
+                      "title": "Pastry",
+                      "categories": [
+                        {
+                          "title": "Pastry Products",
+                          "itemCards": [
+                            {
+                              "card": {
+                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                "info": {
+                                  "id": "97461866",
+                                  "name": "Brownie",
+                                  "category": "Pastry",
+                                  "description": "Dense and fudgy chocolate brownie squares, topped with a sprinkle of sea salt to balance off the rich flavours. ",
+                                  "imageId": "ig4sr6ex8cggol1owk4x",
+                                  "inStock": 1,
+                                  "price": 20000,
+                                  "variants": {},
+                                  "variantsV2": {},
+                                  "itemAttribute": {
+                                    "vegClassifier": "NONVEG"
+                                  },
+                                  "ribbon": {},
+                                  "type": "ITEM",
+                                  "itemBadge": {},
+                                  "badgesV2": {},
+                                  "ratings": {
+                                    "aggregatedRating": {
+                                      "rating": "4.8",
+                                      "ratingCount": "40 ratings",
+                                      "ratingCountV2": "40"
+                                    }
+                                  }
+                                },
+                                "analytics": {},
+                                "hideRestaurantDetails": true
+                              }
+                            },
+                            {
+                              "card": {
+                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                "info": {
+                                  "id": "97462018",
+                                  "name": "Chocolate Cup Cake (4 Pcs)",
+                                  "category": "Pastry",
+                                  "description": "Rich and delicate chocolate cupcake, swirled with lip smacking chocolate ganache and topped off with shaved chocolate",
+                                  "imageId": "roljohrjzvxslm8666an",
+                                  "inStock": 1,
+                                  "price": 50000,
+                                  "variants": {},
+                                  "variantsV2": {},
+                                  "itemAttribute": {
+                                    "vegClassifier": "NONVEG"
+                                  },
+                                  "ribbon": {},
+                                  "type": "ITEM",
+                                  "itemBadge": {},
+                                  "badgesV2": {},
+                                  "ratings": {
+                                    "aggregatedRating": {
+                                      "rating": "4.5",
+                                      "ratingCount": "29 ratings",
+                                      "ratingCountV2": "29"
+                                    }
+                                  }
+                                },
+                                "analytics": {},
+                                "hideRestaurantDetails": true
+                              }
+                            },
+                            {
+                              "card": {
+                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                "info": {
+                                  "id": "97462044",
+                                  "name": "7 Seven Chocolate Mousse Cake (270gms)",
+                                  "category": "Pastry",
+                                  "description": "Rich and velvety chocolate mousse cake with chocolate crumble and dark chocolate ganache",
+                                  "imageId": "uj3txl16293oniliqboc",
+                                  "inStock": 1,
+                                  "price": 50000,
+                                  "variants": {},
+                                  "variantsV2": {},
+                                  "itemAttribute": {
+                                    "vegClassifier": "NONVEG"
+                                  },
+                                  "ribbon": {},
+                                  "type": "ITEM",
+                                  "itemBadge": {},
+                                  "badgesV2": {},
+                                  "ratings": {
+                                    "aggregatedRating": {
+                                      "rating": "4.7",
+                                      "ratingCount": "55 ratings",
+                                      "ratingCountV2": "55"
+                                    }
+                                  }
+                                },
+                                "analytics": {},
+                                "hideRestaurantDetails": true
+                              }
+                            },
+                            {
+                              "card": {
+                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                "info": {
+                                  "id": "100038279",
+                                  "name": "Classic Pineapple",
+                                  "category": "Pastry",
+                                  "description": "Vanilla cake with pineapple confit , coconut mousse topped with lime vanilla namelaka",
+                                  "imageId": "f9f1b5fa390b81085be629a8cc49dd43",
+                                  "inStock": 1,
+                                  "price": 35000,
+                                  "variants": {},
+                                  "variantsV2": {},
+                                  "itemAttribute": {
+                                    "vegClassifier": "NONVEG"
+                                  },
+                                  "ribbon": {},
+                                  "type": "ITEM",
+                                  "itemBadge": {},
+                                  "badgesV2": {},
+                                  "ratings": {
+                                    "aggregatedRating": {
+                                      "rating": "4.1",
+                                      "ratingCount": "10 ratings",
+                                      "ratingCountV2": "10"
+                                    }
+                                  }
+                                },
+                                "analytics": {},
+                                "hideRestaurantDetails": true
+                              }
+                            },
+                            {
+                              "card": {
+                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                "info": {
+                                  "id": "123734755",
+                                  "name": "Inspiration Opera",
+                                  "category": "Pastry",
+                                  "description": "Coffee-soaked jocnode sponge,coffee buttercream,dark chocolate ganache and mousse,topped with mascarpone namelaka. ",
+                                  "imageId": "42f95fc22ce2001ac3779077fd753e48",
+                                  "inStock": 1,
+                                  "price": 33000,
+                                  "variants": {},
+                                  "variantsV2": {},
+                                  "itemAttribute": {
+                                    "vegClassifier": "NONVEG"
+                                  },
+                                  "ribbon": {},
+                                  "type": "ITEM",
+                                  "itemBadge": {},
+                                  "badgesV2": {},
+                                  "ratings": {
+                                    "aggregatedRating": {
+                                      "rating": "4.8",
+                                      "ratingCount": "6 ratings",
+                                      "ratingCountV2": "6"
+                                    }
+                                  }
+                                },
+                                "analytics": {},
+                                "hideRestaurantDetails": true
+                              }
+                            },
+                            {
+                              "card": {
+                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                "info": {
+                                  "id": "123734756",
+                                  "name": "Strawberry Rice Pudding",
+                                  "category": "Pastry",
+                                  "description": "Rice coconut pudding with strawberry compote & mascarpone lime mousse in a ruby chocolate coating with strawberry gel. ",
+                                  "imageId": "20b2f37dc324894081e3cdb6dba042e7",
+                                  "inStock": 1,
+                                  "price": 35000,
+                                  "variants": {},
+                                  "variantsV2": {},
+                                  "itemAttribute": {
+                                    "vegClassifier": "NONVEG"
+                                  },
+                                  "ribbon": {},
+                                  "type": "ITEM",
+                                  "itemBadge": {},
+                                  "badgesV2": {},
+                                  "ratings": {
+                                    "aggregatedRating": {
+                                      "rating": "4.9",
+                                      "ratingCount": "11 ratings",
+                                      "ratingCountV2": "11"
+                                    }
+                                  }
+                                },
+                                "analytics": {},
+                                "hideRestaurantDetails": true
+                              }
+                            },
+                            {
+                              "card": {
+                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                "info": {
+                                  "id": "123734757",
+                                  "name": "Chocolate Caramel Profiterole",
+                                  "category": "Pastry",
+                                  "description": "Caramel-filled profitrole,vanilla namelaka,soft caramel ganache,hazelnut chocolate streusel cake and dark chocolate coating. ",
+                                  "imageId": "08df51a6f6fe0ab21d6d135d94d58e3d",
+                                  "inStock": 1,
+                                  "price": 35000,
+                                  "variants": {},
+                                  "variantsV2": {},
+                                  "itemAttribute": {
+                                    "vegClassifier": "NONVEG"
+                                  },
+                                  "ribbon": {},
+                                  "type": "ITEM",
+                                  "itemBadge": {},
+                                  "badgesV2": {},
+                                  "ratings": {
+                                    "aggregatedRating": {
+                                      "rating": "4.2",
+                                      "ratingCount": "6 ratings",
+                                      "ratingCountV2": "6"
+                                    }
+                                  }
+                                },
+                                "analytics": {},
+                                "hideRestaurantDetails": true
+                              }
+                            },
+                            {
+                              "card": {
+                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                "info": {
+                                  "id": "123734758",
+                                  "name": "Fruit & Nut",
+                                  "category": "Pastry",
+                                  "description": "Nutty chocolate cake with mixed berry compote and chocolate mousse,dipped in crunchy gourmand glaze. ",
+                                  "imageId": "e47e937d189c7e5320e0596eec3ed6d2",
+                                  "inStock": 1,
+                                  "price": 35000,
+                                  "variants": {},
+                                  "variantsV2": {},
+                                  "itemAttribute": {
+                                    "vegClassifier": "NONVEG"
+                                  },
+                                  "ribbon": {},
+                                  "type": "ITEM",
+                                  "itemBadge": {},
+                                  "badgesV2": {},
+                                  "ratings": {
+                                    "aggregatedRating": {
+                                      "rating": "4.6",
+                                      "ratingCount": "16 ratings",
+                                      "ratingCountV2": "16"
+                                    }
+                                  }
+                                },
+                                "analytics": {},
+                                "hideRestaurantDetails": true
+                              }
+                            },
+                            {
+                              "card": {
+                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                "info": {
+                                  "id": "123734759",
+                                  "name": "Blueberry & Lemon Mascarpone Tarte",
+                                  "category": "Pastry",
+                                  "description": "Lemon blueberry sponge with mascarpone mousse, blueberry confit, lime namelaka and blueberries. ",
+                                  "imageId": "a8221e45e5f3ece242d1a1ed5429c567",
+                                  "inStock": 1,
+                                  "price": 35000,
+                                  "variants": {},
+                                  "variantsV2": {},
+                                  "itemAttribute": {
+                                    "vegClassifier": "NONVEG"
+                                  },
+                                  "ribbon": {},
+                                  "type": "ITEM",
+                                  "itemBadge": {},
+                                  "badgesV2": {},
+                                  "ratings": {
+                                    "aggregatedRating": {
+                                      "rating": "4.6",
+                                      "ratingCount": "9 ratings",
+                                      "ratingCountV2": "9"
+                                    }
+                                  }
+                                },
+                                "analytics": {},
+                                "hideRestaurantDetails": true
+                              }
+                            },
+                            {
+                              "card": {
+                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                "info": {
+                                  "id": "123734760",
+                                  "name": "Vegan Pecan Chocolate Brownie",
+                                  "category": "Pastry",
+                                  "description": "70% dark chocolate brownie, topped with chocolate whipped ganache, pacan cream and pecan praline. ",
+                                  "imageId": "0f8b858a4ed57243aeafd51e9d6963fd",
+                                  "inStock": 1,
+                                  "isVeg": 1,
+                                  "price": 35000,
+                                  "variants": {},
+                                  "variantsV2": {},
+                                  "itemAttribute": {
+                                    "vegClassifier": "VEG"
+                                  },
+                                  "ribbon": {},
+                                  "type": "ITEM",
+                                  "itemBadge": {},
+                                  "badgesV2": {},
+                                  "ratings": {
+                                    "aggregatedRating": {
+                                      "rating": "5.0",
+                                      "ratingCount": "3 ratings",
+                                      "ratingCountV2": "3"
+                                    }
+                                  }
+                                },
+                                "analytics": {},
+                                "hideRestaurantDetails": true
+                              }
+                            },
+                            {
+                              "card": {
+                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                "info": {
+                                  "id": "123734762",
+                                  "name": "Hazelnut Caramel Basque",
+                                  "category": "Pastry",
+                                  "description": "Basque cheesecake topped with creamy soft caramel chantilly and hazelnut praline, studded with caramelized hazelnut. ",
+                                  "imageId": "f5112ddb3066408a84a4db41de0940d9",
+                                  "inStock": 1,
+                                  "price": 35000,
+                                  "variants": {},
+                                  "variantsV2": {},
+                                  "itemAttribute": {
+                                    "vegClassifier": "NONVEG"
+                                  },
+                                  "ribbon": {},
+                                  "type": "ITEM",
+                                  "itemBadge": {},
+                                  "badgesV2": {},
+                                  "ratings": {
+                                    "aggregatedRating": {
+                                      "rating": "4.1",
+                                      "ratingCount": "4 ratings",
+                                      "ratingCountV2": "4"
+                                    }
+                                  }
+                                },
+                                "analytics": {},
+                                "hideRestaurantDetails": true
+                              }
+                            },
+                            {
+                              "card": {
+                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                "info": {
+                                  "id": "123734763",
+                                  "name": "Chocolate Muffin",
+                                  "category": "Pastry",
+                                  "description": "Moist and indulgent, a loaded double chocolate chip muffin. ",
+                                  "imageId": "77158a3cae28f077fe503f538f186b32",
+                                  "inStock": 1,
+                                  "price": 25000,
+                                  "variants": {},
+                                  "variantsV2": {},
+                                  "itemAttribute": {
+                                    "vegClassifier": "NONVEG"
+                                  },
+                                  "ribbon": {},
+                                  "type": "ITEM",
+                                  "itemBadge": {},
+                                  "badgesV2": {},
+                                  "ratings": {
+                                    "aggregatedRating": {
+                                      "rating": "4.7",
+                                      "ratingCount": "4 ratings",
+                                      "ratingCountV2": "4"
+                                    }
+                                  }
+                                },
+                                "analytics": {},
+                                "hideRestaurantDetails": true
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "card": {
+                    "card": {
+                      "@type": "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                      "title": "Bowl",
+                      "itemCards": [
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "97461974",
+                              "name": "Granola Powerbowl",
+                              "category": "Bowl",
+                              "description": "Granola with yoghurt, fresh cut fruit and a drizzle of honey",
+                              "imageId": "ryzunwj2wvpfartopqfx",
+                              "inStock": 1,
+                              "isVeg": 1,
+                              "price": 36000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "VEG"
+                              },
+                              "ribbon": {
+                                "text": "Bestseller",
+                                "textColor": "#ffffff",
+                                "topBackgroundColor": "#d53d4c",
+                                "bottomBackgroundColor": "#b02331"
+                              },
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "isBestseller": true,
+                              "ratings": {
+                                "aggregatedRating": {
+                                  "rating": "4.7",
+                                  "ratingCount": "74 ratings",
+                                  "ratingCountV2": "74"
+                                }
+                              }
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "card": {
+                    "card": {
+                      "@type": "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                      "title": "Croissanwich",
+                      "itemCards": [
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "97462004",
+                              "name": "Bacon Egg And Cheese Croissanwich",
+                              "category": "Croissanwich",
+                              "description": "Savoury and sweet toppings on two sourdough toasts or filled inside a sliced croissant",
+                              "imageId": "rott01jidoph2pfd3c15",
+                              "inStock": 1,
+                              "price": 42000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "NONVEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {
+                                  "rating": "4.8",
+                                  "ratingCount": "29 ratings",
+                                  "ratingCountV2": "29"
+                                }
+                              }
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "97461971",
+                              "name": "Creamy Chicken Salad Croissanwich",
+                              "category": "Croissanwich",
+                              "description": "Savoury and sweet toppings on two sourdough toasts or filled inside a sliced croissant",
+                              "imageId": "dlds741xtwkkvfzpbk2p",
+                              "inStock": 1,
+                              "price": 36000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "NONVEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {
+                                  "rating": "4.6",
+                                  "ratingCount": "108 ratings",
+                                  "ratingCountV2": "108"
+                                }
+                              }
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "97461944",
+                              "name": "Creamy Egg Salad Croissanwich",
+                              "category": "Croissanwich",
+                              "description": "Savoury and sweet toppings on two sourdough toasts or filled inside a sliced croissant",
+                              "imageId": "cbtyd1uxp9ym6d8y3xhh",
+                              "inStock": 1,
+                              "price": 33000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "NONVEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {
+                                  "rating": "4.8",
+                                  "ratingCount": "40 ratings",
+                                  "ratingCountV2": "40"
+                                }
+                              }
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "97461946",
+                              "name": "Pesto Grilled English Vegetable Croissanwich",
+                              "category": "Croissanwich",
+                              "description": "Savoury and sweet toppings on two sourdough toasts or filled inside a sliced croissant",
+                              "imageId": "t1ersvxu6gvnr2ktfeeh",
+                              "inStock": 1,
+                              "isVeg": 1,
+                              "price": 33000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "VEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {
+                                  "rating": "4.9",
+                                  "ratingCount": "48 ratings",
+                                  "ratingCountV2": "48"
+                                }
+                              }
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "card": {
+                    "card": {
+                      "@type": "type.googleapis.com/swiggy.presentation.food.v2.NestedItemCategory",
+                      "title": "Beverage",
+                      "categories": [
+                        {
+                          "title": "Coffee",
+                          "itemCards": [
+                            {
+                              "card": {
+                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                "info": {
+                                  "id": "54804922",
+                                  "name": "Americano",
+                                  "category": "Beverage",
+                                  "description": "Rich aromatic coffee brewed along with hot water. ",
+                                  "imageId": "hovrpzv7rfrhzgpsaydv",
+                                  "inStock": 1,
+                                  "isVeg": 1,
+                                  "price": 16000,
+                                  "variants": {},
+                                  "variantsV2": {},
+                                  "itemAttribute": {
+                                    "vegClassifier": "VEG"
+                                  },
+                                  "ribbon": {},
+                                  "type": "ITEM",
+                                  "itemBadge": {},
+                                  "badgesV2": {},
+                                  "ratings": {
+                                    "aggregatedRating": {
+                                      "rating": "4.6",
+                                      "ratingCount": "38 ratings",
+                                      "ratingCountV2": "38"
+                                    }
+                                  }
+                                },
+                                "analytics": {},
+                                "hideRestaurantDetails": true
+                              }
+                            },
+                            {
+                              "card": {
+                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                "info": {
+                                  "id": "97461869",
+                                  "name": "Cafe Latte",
+                                  "category": "Beverage",
+                                  "description": "Freshly brewed espresso balanced with steamed milk and a thin layer of foam. ",
+                                  "imageId": "anamt4saylfpcunswryw",
+                                  "inStock": 1,
+                                  "isVeg": 1,
+                                  "price": 21000,
+                                  "variants": {},
+                                  "variantsV2": {},
+                                  "itemAttribute": {
+                                    "vegClassifier": "VEG"
+                                  },
+                                  "ribbon": {},
+                                  "type": "ITEM",
+                                  "itemBadge": {},
+                                  "badgesV2": {},
+                                  "ratings": {
+                                    "aggregatedRating": {
+                                      "rating": "4.9",
+                                      "ratingCount": "12 ratings",
+                                      "ratingCountV2": "12"
+                                    }
+                                  }
+                                },
+                                "analytics": {},
+                                "hideRestaurantDetails": true
+                              }
+                            },
+                            {
+                              "card": {
+                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                "info": {
+                                  "id": "97461904",
+                                  "name": "Cafe Mocha",
+                                  "category": "Beverage",
+                                  "description": "A warm infusion of couverture dark chocolate and coffee. ",
+                                  "imageId": "mao54nqiejj7ypyqotky",
+                                  "inStock": 1,
+                                  "isVeg": 1,
+                                  "price": 25000,
+                                  "variants": {},
+                                  "variantsV2": {},
+                                  "itemAttribute": {
+                                    "vegClassifier": "VEG"
+                                  },
+                                  "ribbon": {},
+                                  "type": "ITEM",
+                                  "itemBadge": {},
+                                  "badgesV2": {},
+                                  "ratings": {
+                                    "aggregatedRating": {
+                                      "rating": "4.6",
+                                      "ratingCount": "10 ratings",
+                                      "ratingCountV2": "10"
+                                    }
+                                  }
+                                },
+                                "analytics": {},
+                                "hideRestaurantDetails": true
+                              }
+                            },
+                            {
+                              "card": {
+                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                "info": {
+                                  "id": "54804920",
+                                  "name": "Cappuccino",
+                                  "category": "Beverage",
+                                  "description": "Freshly brewed espresso with an equal amount of steamed milk topped with foam. ",
+                                  "imageId": "tsbkkzhqmeudnmudikox",
+                                  "inStock": 1,
+                                  "isVeg": 1,
+                                  "price": 20000,
+                                  "variants": {},
+                                  "variantsV2": {},
+                                  "itemAttribute": {
+                                    "vegClassifier": "VEG"
+                                  },
+                                  "ribbon": {},
+                                  "type": "ITEM",
+                                  "itemBadge": {},
+                                  "badgesV2": {},
+                                  "ratings": {
+                                    "aggregatedRating": {
+                                      "rating": "4.9",
+                                      "ratingCount": "71 ratings",
+                                      "ratingCountV2": "71"
+                                    }
+                                  }
+                                },
+                                "analytics": {},
+                                "hideRestaurantDetails": true
+                              }
+                            },
+                            {
+                              "card": {
+                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                "info": {
+                                  "id": "54804925",
+                                  "name": "Filter Coffee",
+                                  "category": "Beverage",
+                                  "description": "A rich and aromatic variation of the traditional south indian styled coffee. ",
+                                  "imageId": "ighmzpsxbhyqlnyawxvf",
+                                  "inStock": 1,
+                                  "isVeg": 1,
+                                  "price": 19000,
+                                  "variants": {},
+                                  "variantsV2": {},
+                                  "itemAttribute": {
+                                    "vegClassifier": "VEG"
+                                  },
+                                  "ribbon": {},
+                                  "type": "ITEM",
+                                  "itemBadge": {},
+                                  "badgesV2": {},
+                                  "ratings": {
+                                    "aggregatedRating": {
+                                      "rating": "4.1",
+                                      "ratingCount": "28 ratings",
+                                      "ratingCountV2": "28"
+                                    }
+                                  }
+                                },
+                                "analytics": {},
+                                "hideRestaurantDetails": true
+                              }
+                            },
+                            {
+                              "card": {
+                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                "info": {
+                                  "id": "97461836",
+                                  "name": "Iced Americano",
+                                  "category": "Beverage",
+                                  "description": "The refreshing goodness of an americano served ice cold. ",
+                                  "imageId": "skk6wye7ff7p37pclh6z",
+                                  "inStock": 1,
+                                  "isVeg": 1,
+                                  "price": 16000,
+                                  "variants": {},
+                                  "variantsV2": {},
+                                  "itemAttribute": {
+                                    "vegClassifier": "VEG"
+                                  },
+                                  "ribbon": {},
+                                  "type": "ITEM",
+                                  "itemBadge": {},
+                                  "badgesV2": {},
+                                  "ratings": {
+                                    "aggregatedRating": {
+                                      "rating": "4.2",
+                                      "ratingCount": "4 ratings",
+                                      "ratingCountV2": "4"
+                                    }
+                                  }
+                                },
+                                "analytics": {},
+                                "hideRestaurantDetails": true
+                              }
+                            },
+                            {
+                              "card": {
+                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                "info": {
+                                  "id": "54804928",
+                                  "name": "Iced Latte",
+                                  "category": "Beverage",
+                                  "description": "Freshly brewed coffee blended and balanced with cold milk and foam. ",
+                                  "imageId": "jxs7dc9bzm4qkp4kkyzw",
+                                  "inStock": 1,
+                                  "isVeg": 1,
+                                  "price": 21000,
+                                  "variants": {},
+                                  "variantsV2": {},
+                                  "itemAttribute": {
+                                    "vegClassifier": "VEG"
+                                  },
+                                  "ribbon": {},
+                                  "type": "ITEM",
+                                  "itemBadge": {},
+                                  "badgesV2": {},
+                                  "ratings": {
+                                    "aggregatedRating": {
+                                      "rating": "3.4",
+                                      "ratingCount": "14 ratings",
+                                      "ratingCountV2": "14"
+                                    }
+                                  }
+                                },
+                                "analytics": {},
+                                "hideRestaurantDetails": true
+                              }
+                            },
+                            {
+                              "card": {
+                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                "info": {
+                                  "id": "54804929",
+                                  "name": "Iced Mocha",
+                                  "category": "Beverage",
+                                  "description": "The perfect balance of dark chocolate and coffee, served cold. ",
+                                  "imageId": "eqi1ng8io8mxina7zn4s",
+                                  "inStock": 1,
+                                  "isVeg": 1,
+                                  "price": 26000,
+                                  "variants": {},
+                                  "variantsV2": {},
+                                  "itemAttribute": {
+                                    "vegClassifier": "VEG"
+                                  },
+                                  "ribbon": {},
+                                  "type": "ITEM",
+                                  "itemBadge": {},
+                                  "badgesV2": {},
+                                  "ratings": {
+                                    "aggregatedRating": {
+                                      "rating": "4.9",
+                                      "ratingCount": "20 ratings",
+                                      "ratingCountV2": "20"
+                                    }
+                                  }
+                                },
+                                "analytics": {},
+                                "hideRestaurantDetails": true
+                              }
+                            },
+                            {
+                              "card": {
+                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                "info": {
+                                  "id": "97461895",
+                                  "name": "Vietnamese Iced Coffee",
+                                  "category": "Beverage",
+                                  "description": "Traditional vietnamese beverage made with freshly brewed coffee and condensed milk. ",
+                                  "imageId": "nffxqrima3vnt7mjvaaw",
+                                  "inStock": 1,
+                                  "isVeg": 1,
+                                  "price": 25000,
+                                  "variants": {},
+                                  "variantsV2": {},
+                                  "itemAttribute": {
+                                    "vegClassifier": "VEG"
+                                  },
+                                  "ribbon": {},
+                                  "type": "ITEM",
+                                  "itemBadge": {},
+                                  "badgesV2": {},
+                                  "ratings": {
+                                    "aggregatedRating": {
+                                      "rating": "4.9",
+                                      "ratingCount": "72 ratings",
+                                      "ratingCountV2": "72"
+                                    }
+                                  }
+                                },
+                                "analytics": {},
+                                "hideRestaurantDetails": true
+                              }
+                            },
+                            {
+                              "card": {
+                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                "info": {
+                                  "id": "97461886",
+                                  "name": "Cold Brew Black",
+                                  "category": "Beverage",
+                                  "description": "Refreshing cold coffee beverage steeped overnight and served ice cold. ",
+                                  "imageId": "fg9bgvhudv26gv9mznda",
+                                  "inStock": 1,
+                                  "isVeg": 1,
+                                  "price": 20000,
+                                  "variants": {},
+                                  "variantsV2": {},
+                                  "itemAttribute": {
+                                    "vegClassifier": "VEG"
+                                  },
+                                  "ribbon": {},
+                                  "type": "ITEM",
+                                  "itemBadge": {},
+                                  "badgesV2": {},
+                                  "ratings": {
+                                    "aggregatedRating": {
+                                      "rating": "5.0",
+                                      "ratingCount": "5 ratings",
+                                      "ratingCountV2": "5"
+                                    }
+                                  }
+                                },
+                                "analytics": {},
+                                "hideRestaurantDetails": true
+                              }
+                            },
+                            {
+                              "card": {
+                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                "info": {
+                                  "id": "97461887",
+                                  "name": "Cold Brew Cinnamon",
+                                  "category": "Beverage",
+                                  "description": "Refreshing cold coffee beverage steeped overnight and flavoured with cinnamon bark. ",
+                                  "imageId": "ligvee8pubvaa67v68bv",
+                                  "inStock": 1,
+                                  "isVeg": 1,
+                                  "price": 20000,
+                                  "variants": {},
+                                  "variantsV2": {},
+                                  "itemAttribute": {
+                                    "vegClassifier": "VEG"
+                                  },
+                                  "ribbon": {},
+                                  "type": "ITEM",
+                                  "itemBadge": {},
+                                  "badgesV2": {},
+                                  "ratings": {
+                                    "aggregatedRating": {
+                                      "rating": "4.8",
+                                      "ratingCount": "9 ratings",
+                                      "ratingCountV2": "9"
+                                    }
+                                  }
+                                },
+                                "analytics": {},
+                                "hideRestaurantDetails": true
+                              }
+                            },
+                            {
+                              "card": {
+                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                "info": {
+                                  "id": "70554047",
+                                  "name": "Cold Brew Mint",
+                                  "category": "Beverage",
+                                  "description": "Refreshing cold coffee beverage steeped overnight and balanced off with flavours of mint. ",
+                                  "imageId": "iiu2dnf4vsnujlfizjcs",
+                                  "inStock": 1,
+                                  "isVeg": 1,
+                                  "price": 20000,
+                                  "variants": {},
+                                  "variantsV2": {},
+                                  "itemAttribute": {
+                                    "vegClassifier": "VEG"
+                                  },
+                                  "ribbon": {},
+                                  "type": "ITEM",
+                                  "itemBadge": {},
+                                  "badgesV2": {},
+                                  "ratings": {
+                                    "aggregatedRating": {
+                                      "rating": "3.4",
+                                      "ratingCount": "8 ratings",
+                                      "ratingCountV2": "8"
+                                    }
+                                  }
+                                },
+                                "analytics": {},
+                                "hideRestaurantDetails": true
+                              }
+                            },
+                            {
+                              "card": {
+                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                "info": {
+                                  "id": "54804927",
+                                  "name": "Cold Coffee",
+                                  "category": "Beverage",
+                                  "description": "The original iced milk-coffee blended to perfection and served cold. ",
+                                  "imageId": "lwc4gijmjrrrzo0m9elg",
+                                  "isVeg": 1,
+                                  "price": 25000,
+                                  "variants": {},
+                                  "variantsV2": {},
+                                  "nextAvailableAtMessage": "Next available at 8:30 am, tomorrow",
+                                  "itemAttribute": {
+                                    "vegClassifier": "VEG"
+                                  },
+                                  "ribbon": {
+                                    "text": "Bestseller",
+                                    "textColor": "#ffffff",
+                                    "topBackgroundColor": "#d53d4c",
+                                    "bottomBackgroundColor": "#b02331"
+                                  },
+                                  "type": "ITEM",
+                                  "itemBadge": {},
+                                  "badgesV2": {},
+                                  "isBestseller": true,
+                                  "ratings": {
+                                    "aggregatedRating": {
+                                      "rating": "4.6",
+                                      "ratingCount": "224 ratings",
+                                      "ratingCountV2": "224"
+                                    }
+                                  }
+                                },
+                                "analytics": {},
+                                "hideRestaurantDetails": true
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Dairy Delights",
+                          "itemCards": [
+                            {
+                              "card": {
+                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                "info": {
+                                  "id": "97461900",
+                                  "name": "Banana Caramel Thickshake",
+                                  "category": "Beverage",
+                                  "description": "A smooth blend of fresh bananas along with caramel sauce, ice cream and cold milk, served over ice. ",
+                                  "imageId": "q13iokuxm99eswfb01rv",
+                                  "inStock": 1,
+                                  "isVeg": 1,
+                                  "price": 22000,
+                                  "variants": {},
+                                  "variantsV2": {},
+                                  "itemAttribute": {
+                                    "vegClassifier": "VEG"
+                                  },
+                                  "ribbon": {},
+                                  "type": "ITEM",
+                                  "itemBadge": {},
+                                  "badgesV2": {},
+                                  "ratings": {
+                                    "aggregatedRating": {
+                                      "rating": "4.7",
+                                      "ratingCount": "7 ratings",
+                                      "ratingCountV2": "7"
+                                    }
+                                  }
+                                },
+                                "analytics": {},
+                                "hideRestaurantDetails": true
+                              }
+                            },
+                            {
+                              "card": {
+                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                "info": {
+                                  "id": "97461901",
+                                  "name": "Oreo Thickshake",
+                                  "category": "Beverage",
+                                  "description": "A smooth blend of oreo cookies along with milk and ice-cream. ",
+                                  "imageId": "znfokrx6ls7y7nkr05nd",
+                                  "inStock": 1,
+                                  "isVeg": 1,
+                                  "price": 22000,
+                                  "variants": {},
+                                  "variantsV2": {},
+                                  "itemAttribute": {
+                                    "vegClassifier": "VEG"
+                                  },
+                                  "ribbon": {},
+                                  "type": "ITEM",
+                                  "itemBadge": {},
+                                  "badgesV2": {},
+                                  "ratings": {
+                                    "aggregatedRating": {
+                                      "rating": "4.8",
+                                      "ratingCount": "6 ratings",
+                                      "ratingCountV2": "6"
+                                    }
+                                  }
+                                },
+                                "analytics": {},
+                                "hideRestaurantDetails": true
+                              }
+                            },
+                            {
+                              "card": {
+                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                "info": {
+                                  "id": "97461927",
+                                  "name": "Signature Chocolate Shake",
+                                  "category": "Beverage",
+                                  "description": "Lavonne signature chocolate cake blended along with ice-cream, chocolate ganache and cold milk. ",
+                                  "imageId": "yvslbhvkhvw5amlqibni",
+                                  "inStock": 1,
+                                  "isVeg": 1,
+                                  "price": 28000,
+                                  "variants": {},
+                                  "variantsV2": {},
+                                  "itemAttribute": {
+                                    "vegClassifier": "VEG"
+                                  },
+                                  "ribbon": {},
+                                  "type": "ITEM",
+                                  "itemBadge": {},
+                                  "badgesV2": {},
+                                  "ratings": {
+                                    "aggregatedRating": {
+                                      "rating": "4.9",
+                                      "ratingCount": "14 ratings",
+                                      "ratingCountV2": "14"
+                                    }
+                                  }
+                                },
+                                "analytics": {},
+                                "hideRestaurantDetails": true
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Refreshers",
+                          "itemCards": [
+                            {
+                              "card": {
+                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                "info": {
+                                  "id": "54804882",
+                                  "name": "Orange Juice",
+                                  "category": "Beverage",
+                                  "description": "Slow and fresh pressed orange juice, with no added sugar. ",
+                                  "imageId": "i82fm7do0sneag0nlpqx",
+                                  "inStock": 1,
+                                  "isVeg": 1,
+                                  "price": 25000,
+                                  "variants": {},
+                                  "variantsV2": {},
+                                  "itemAttribute": {
+                                    "vegClassifier": "VEG"
+                                  },
+                                  "ribbon": {},
+                                  "type": "ITEM",
+                                  "itemBadge": {},
+                                  "badgesV2": {},
+                                  "ratings": {
+                                    "aggregatedRating": {
+                                      "rating": "4.9",
+                                      "ratingCount": "136 ratings",
+                                      "ratingCountV2": "136"
+                                    }
+                                  }
+                                },
+                                "analytics": {},
+                                "hideRestaurantDetails": true
+                              }
+                            },
+                            {
+                              "card": {
+                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                "info": {
+                                  "id": "97461894",
+                                  "name": "Tender Coconut Cooler",
+                                  "category": "Beverage",
+                                  "description": "Cool and fresh tender coconut water whipped with delicate coconut flesh",
+                                  "imageId": "v67zmtekedhab7svg0bd",
+                                  "inStock": 1,
+                                  "isVeg": 1,
+                                  "price": 20000,
+                                  "variants": {},
+                                  "variantsV2": {},
+                                  "itemAttribute": {
+                                    "vegClassifier": "VEG"
+                                  },
+                                  "ribbon": {},
+                                  "type": "ITEM",
+                                  "itemBadge": {},
+                                  "badgesV2": {},
+                                  "ratings": {
+                                    "aggregatedRating": {
+                                      "rating": "4.5",
+                                      "ratingCount": "13 ratings",
+                                      "ratingCountV2": "13"
+                                    }
+                                  }
+                                },
+                                "analytics": {},
+                                "hideRestaurantDetails": true
+                              }
+                            },
+                            {
+                              "card": {
+                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                "info": {
+                                  "id": "97461899",
+                                  "name": "Watermelon Fruit Juice",
+                                  "category": "Beverage",
+                                  "description": "Slow and fresh pressed watermelon juice, with no added sugar. ",
+                                  "imageId": "cozu3oxv5aohulpi5yie",
+                                  "inStock": 1,
+                                  "isVeg": 1,
+                                  "price": 20000,
+                                  "variants": {},
+                                  "variantsV2": {},
+                                  "itemAttribute": {
+                                    "vegClassifier": "VEG"
+                                  },
+                                  "ribbon": {},
+                                  "type": "ITEM",
+                                  "itemBadge": {},
+                                  "badgesV2": {},
+                                  "ratings": {
+                                    "aggregatedRating": {
+                                      "rating": "4.8",
+                                      "ratingCount": "13 ratings",
+                                      "ratingCountV2": "13"
+                                    }
+                                  }
+                                },
+                                "analytics": {},
+                                "hideRestaurantDetails": true
+                              }
+                            },
+                            {
+                              "card": {
+                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                "info": {
+                                  "id": "120994453",
+                                  "name": "Ginger Kombucha",
+                                  "category": "Beverage",
+                                  "imageId": "ae2cd0991161ae2b09a32813367da2aa",
+                                  "inStock": 1,
+                                  "isVeg": 1,
+                                  "price": 23500,
+                                  "variants": {},
+                                  "variantsV2": {},
+                                  "itemAttribute": {
+                                    "vegClassifier": "VEG"
+                                  },
+                                  "ribbon": {},
+                                  "type": "ITEM",
+                                  "itemBadge": {},
+                                  "badgesV2": {},
+                                  "ratings": {
+                                    "aggregatedRating": {}
+                                  }
+                                },
+                                "analytics": {},
+                                "hideRestaurantDetails": true
+                              }
+                            },
+                            {
+                              "card": {
+                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                "info": {
+                                  "id": "120994454",
+                                  "name": "Peach Kombucha",
+                                  "category": "Beverage",
+                                  "imageId": "eb2f8e285f81f3e3b2477feae704955c",
+                                  "inStock": 1,
+                                  "isVeg": 1,
+                                  "price": 23500,
+                                  "variants": {},
+                                  "variantsV2": {},
+                                  "itemAttribute": {
+                                    "vegClassifier": "VEG"
+                                  },
+                                  "ribbon": {},
+                                  "type": "ITEM",
+                                  "itemBadge": {},
+                                  "badgesV2": {},
+                                  "ratings": {
+                                    "aggregatedRating": {}
+                                  }
+                                },
+                                "analytics": {},
+                                "hideRestaurantDetails": true
+                              }
+                            },
+                            {
+                              "card": {
+                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                "info": {
+                                  "id": "120994456",
+                                  "name": "Earlgrey Lavender Kombucha",
+                                  "category": "Beverage",
+                                  "imageId": "6faa48a27480c3b32f8b1b53a4a8ddc3",
+                                  "inStock": 1,
+                                  "isVeg": 1,
+                                  "price": 23500,
+                                  "variants": {},
+                                  "variantsV2": {},
+                                  "itemAttribute": {
+                                    "vegClassifier": "VEG"
+                                  },
+                                  "ribbon": {},
+                                  "type": "ITEM",
+                                  "itemBadge": {},
+                                  "badgesV2": {},
+                                  "ratings": {
+                                    "aggregatedRating": {}
+                                  }
+                                },
+                                "analytics": {},
+                                "hideRestaurantDetails": true
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Smoothies",
+                          "itemCards": [
+                            {
+                              "card": {
+                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                "info": {
+                                  "id": "54804930",
+                                  "name": "Blueberry Smoothie",
+                                  "category": "Beverage",
+                                  "description": "A smooth blend of yoghurt, blueberry puree, ice-cream and milk",
+                                  "imageId": "ddcp8hubcz84i9bdjgwp",
+                                  "inStock": 1,
+                                  "isVeg": 1,
+                                  "price": 30000,
+                                  "variants": {},
+                                  "variantsV2": {},
+                                  "itemAttribute": {
+                                    "vegClassifier": "VEG"
+                                  },
+                                  "ribbon": {},
+                                  "type": "ITEM",
+                                  "itemBadge": {},
+                                  "badgesV2": {},
+                                  "ratings": {
+                                    "aggregatedRating": {
+                                      "rating": "4.7",
+                                      "ratingCount": "51 ratings",
+                                      "ratingCountV2": "51"
+                                    }
+                                  }
+                                },
+                                "analytics": {},
+                                "hideRestaurantDetails": true
+                              }
+                            },
+                            {
+                              "card": {
+                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                "info": {
+                                  "id": "97461919",
+                                  "name": "Mixed Berry Smoothie",
+                                  "category": "Beverage",
+                                  "description": "A smooth blend of yohurt, blueberry and strawberry puree, ice cream and milk",
+                                  "imageId": "yfpsydyotuvhrqryrkbn",
+                                  "inStock": 1,
+                                  "isVeg": 1,
+                                  "price": 30000,
+                                  "variants": {},
+                                  "variantsV2": {},
+                                  "itemAttribute": {
+                                    "vegClassifier": "VEG"
+                                  },
+                                  "ribbon": {},
+                                  "type": "ITEM",
+                                  "itemBadge": {},
+                                  "badgesV2": {},
+                                  "ratings": {
+                                    "aggregatedRating": {
+                                      "rating": "4.9",
+                                      "ratingCount": "11 ratings",
+                                      "ratingCountV2": "11"
+                                    }
+                                  }
+                                },
+                                "analytics": {},
+                                "hideRestaurantDetails": true
+                              }
+                            },
+                            {
+                              "card": {
+                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                "info": {
+                                  "id": "97461929",
+                                  "name": "Strawberry Smoothie",
+                                  "category": "Beverage",
+                                  "description": "A smooth blend of yoghurt, strawberry puree, ice-cream and milk",
+                                  "imageId": "g5tlddy67uphx6rvfkzo",
+                                  "inStock": 1,
+                                  "isVeg": 1,
+                                  "price": 30000,
+                                  "variants": {},
+                                  "variantsV2": {},
+                                  "itemAttribute": {
+                                    "vegClassifier": "VEG"
+                                  },
+                                  "ribbon": {},
+                                  "type": "ITEM",
+                                  "itemBadge": {},
+                                  "badgesV2": {},
+                                  "ratings": {
+                                    "aggregatedRating": {
+                                      "rating": "4.9",
+                                      "ratingCount": "4 ratings",
+                                      "ratingCountV2": "4"
+                                    }
+                                  }
+                                },
+                                "analytics": {},
+                                "hideRestaurantDetails": true
+                              }
+                            },
+                            {
+                              "card": {
+                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                "info": {
+                                  "id": "54804931",
+                                  "name": "Banana Peanut Butter Smoothie",
+                                  "category": "Beverage",
+                                  "description": "A smooth blend of yoghurt, fresh bananas, peanut butter, ice-cream and milk. ",
+                                  "imageId": "eclgggjfzgffajktfwlp",
+                                  "inStock": 1,
+                                  "isVeg": 1,
+                                  "price": 30000,
+                                  "variants": {},
+                                  "variantsV2": {},
+                                  "itemAttribute": {
+                                    "vegClassifier": "VEG"
+                                  },
+                                  "ribbon": {},
+                                  "type": "ITEM",
+                                  "itemBadge": {},
+                                  "badgesV2": {},
+                                  "ratings": {
+                                    "aggregatedRating": {
+                                      "rating": "4.7",
+                                      "ratingCount": "25 ratings",
+                                      "ratingCountV2": "25"
+                                    }
+                                  }
+                                },
+                                "analytics": {},
+                                "hideRestaurantDetails": true
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Tea",
+                          "itemCards": [
+                            {
+                              "card": {
+                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                "info": {
+                                  "id": "97461888",
+                                  "name": "Lemon Iced Tea",
+                                  "category": "Beverage",
+                                  "imageId": "twbrtlbxb5m8jyxbcyjl",
+                                  "inStock": 1,
+                                  "isVeg": 1,
+                                  "price": 20000,
+                                  "variants": {},
+                                  "variantsV2": {},
+                                  "itemAttribute": {
+                                    "vegClassifier": "VEG"
+                                  },
+                                  "ribbon": {},
+                                  "type": "ITEM",
+                                  "itemBadge": {},
+                                  "badgesV2": {},
+                                  "ratings": {
+                                    "aggregatedRating": {
+                                      "rating": "5.0",
+                                      "ratingCount": "8 ratings",
+                                      "ratingCountV2": "8"
+                                    }
+                                  }
+                                },
+                                "analytics": {},
+                                "hideRestaurantDetails": true
+                              }
+                            },
+                            {
+                              "card": {
+                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                "info": {
+                                  "id": "97461890",
+                                  "name": "Peach Iced Tea",
+                                  "category": "Beverage",
+                                  "inStock": 1,
+                                  "isVeg": 1,
+                                  "price": 20000,
+                                  "variants": {},
+                                  "variantsV2": {},
+                                  "itemAttribute": {
+                                    "vegClassifier": "VEG"
+                                  },
+                                  "ribbon": {},
+                                  "type": "ITEM",
+                                  "itemBadge": {},
+                                  "badgesV2": {},
+                                  "ratings": {
+                                    "aggregatedRating": {
+                                      "rating": "5.0",
+                                      "ratingCount": "5 ratings",
+                                      "ratingCountV2": "5"
+                                    }
+                                  }
+                                },
+                                "analytics": {},
+                                "hideRestaurantDetails": true
+                              }
+                            },
+                            {
+                              "card": {
+                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                "info": {
+                                  "id": "54804926",
+                                  "name": "Pulled Masala Chai",
+                                  "category": "Beverage",
+                                  "description": "A popular hot milk-tea beverage made by pouring the tea back and forth briskly while aerating it to make it smoother and creamier. ",
+                                  "imageId": "f7aokqsreunpjerwphsr",
+                                  "inStock": 1,
+                                  "isVeg": 1,
+                                  "price": 18000,
+                                  "variants": {},
+                                  "variantsV2": {},
+                                  "itemAttribute": {
+                                    "vegClassifier": "VEG"
+                                  },
+                                  "ribbon": {},
+                                  "type": "ITEM",
+                                  "itemBadge": {},
+                                  "badgesV2": {},
+                                  "ratings": {
+                                    "aggregatedRating": {
+                                      "rating": "4.9",
+                                      "ratingCount": "20 ratings",
+                                      "ratingCountV2": "20"
+                                    }
+                                  }
+                                },
+                                "analytics": {},
+                                "hideRestaurantDetails": true
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "card": {
+                    "card": {
+                      "@type": "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                      "title": "Specials",
+                      "itemCards": [
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "129803293",
+                              "name": "Chocolate Hazelnut Babka",
+                              "category": "Specials",
+                              "inStock": 1,
+                              "isVeg": 1,
+                              "price": 35000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "VEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              }
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "129803298",
+                              "name": "Peanut Cacao Nib Brownie",
+                              "category": "Specials",
+                              "inStock": 1,
+                              "isVeg": 1,
+                              "price": 30000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "VEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              }
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "129803301",
+                              "name": "Pecan Pie",
+                              "category": "Specials",
+                              "inStock": 1,
+                              "isVeg": 1,
+                              "price": 35000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "VEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              }
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "129803302",
+                              "name": "Savoury Croissant",
+                              "category": "Specials",
+                              "inStock": 1,
+                              "isVeg": 1,
+                              "price": 25000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "VEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              }
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "129803297",
+                              "name": "The Carrot Cake",
+                              "category": "Specials",
+                              "inStock": 1,
+                              "isVeg": 1,
+                              "price": 30000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "VEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              }
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "129803299",
+                              "name": "Tiramisu(tony)",
+                              "category": "Specials",
+                              "inStock": 1,
+                              "isVeg": 1,
+                              "price": 35000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "VEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              }
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "129803294",
+                              "name": "Toni?s Special Xmas Briot?n",
+                              "category": "Specials",
+                              "inStock": 1,
+                              "isVeg": 1,
+                              "price": 55000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "VEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              }
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "card": {
+                    "card": {
+                      "@type": "type.googleapis.com/swiggy.presentation.food.v2.RestaurantLicenseInfo",
+                      "type": "FSSAI",
+                      "imageId": "fssai_final_edss9i",
+                      "text": ["License No. 11219333001098"]
+                    }
+                  }
+                },
+                {
+                  "card": {
+                    "card": {
+                      "@type": "type.googleapis.com/swiggy.presentation.food.v2.RestaurantAddress",
+                      "name": "Lavonne",
+                      "area": "Indiranagar",
+                      "completeAddress": "2nd Phase, #263, 3rd Cross Rd, Stage 2, Domlur, Bengaluru, Karnataka 560071"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "firstOffsetRequest": true,
+    "isQCLink": false
+  },
+  "tid": "5cac250d-7aa8-4724-a67c-e47923585835",
+  "sid": "ax3b9f0a-618a-42cf-a3e4-6eb2ef13f875",
+  "deviceId": "fd496aa9-6d9d-15f2-3467-6bc35efa275c",
+  "csrfToken": null
+}

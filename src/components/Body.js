@@ -65,7 +65,7 @@ const Body = () => {
               if (filterRestrurant?.length !== 0) {
                 setFilterResturantS(filterRestrurant);
               } else {
-                if (window.confirm(`The restaurant is not found in the list`)) {
+                if (window.confirm(`The ${searchText} restaurant is not found in the list`)) {
                   setSearchText("");
                   fetchResturants();
                 }

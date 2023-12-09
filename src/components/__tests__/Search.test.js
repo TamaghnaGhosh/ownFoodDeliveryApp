@@ -46,6 +46,6 @@ it('should filter res list poular', async () => {
     fireEvent.click(topRatedRestrurantsBtns);
 
     const cardsAfterFliter = screen.getAllByTestId("ResCardtestId");
-    console.log(cardsAfterFliter.length);
+    // console.log(cardsAfterFliter.length);
     expect(cardsAfterFliter.length).toBe(8);
 })

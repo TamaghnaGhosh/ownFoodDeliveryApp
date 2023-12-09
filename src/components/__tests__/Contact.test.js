@@ -3,6 +3,18 @@ import '@testing-library/jest-dom'
 import Contact from "../Contact";
 
 describe('contanc us page yest cases', () => {
+    // beforeAll(() => {
+    //     console.log("before All");
+    // });
+    // beforeEach(() => {
+    //     console.log("before Each");
+    // })
+    // afterAll(() => {
+    //     console.log("after All");
+    // });
+    // afterEach(() => {
+    //     console.log("after Each");
+    // })
     it('should load contanct us componet', () => {
 
         render(<Contact />);

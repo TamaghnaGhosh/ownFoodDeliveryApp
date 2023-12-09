@@ -6,7 +6,9 @@ const ResrtrurantCard = (props) => {
 
   const { loggedInUser } = useContext(UserContext);
   return (
-    <div data-testid="ResCardtestId" className="res-card p-4 m-4 w-[235px] rounded-lg bg-gray-100 hover:bg-gray-200" >
+    <div
+      data-testid="ResCardtestId"
+      className="res-card p-4 m-4 w-[235px] rounded-lg bg-gray-100 hover:bg-gray-200" >
       <img
         className="res-logo rounded-lg w-full"
         alt="res-card"
