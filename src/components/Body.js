@@ -13,7 +13,7 @@ const Body = () => {
   const onLineStatus = useOnlineStatus();
 
   const { loggedInUser, setLoginName } = useContext(UserContext);
-  
+
   // useFetchRestrurants custom hooks
   const { filterRestrurantS, setFilterResturantS, fetchResturants, searchText, setSearchText } = useFetchRestrurants();
 
@@ -44,6 +44,7 @@ const Body = () => {
       <div className="filter flex">
         <div className="search p-4 m-4">
           <input
+            data-testid="seachInputTestId"
             type="text"
             className="border border-solid border-slate-400 rounded-lg py-[2px] px-2"
             placeholder="Search Resturants"
@@ -55,12 +56,12 @@ const Body = () => {
           />
           <button
             id="searchBtn"
-            className="px-4 py-1 bg-slate-400 m-4 rounded-lg text-zinc-50"
+            className="px-4 py-1 bg-slate-400 m-4 rounded-lg text-zinc-50 hover:bg-slate-600"
             onClick={() => {
               const filterRestrurant = filterRestrurantS?.filter((res) =>
                 res?.info?.name.toLowerCase().includes(searchText.toLowerCase())
               );
-              console.log(filterRestrurant);
+              // console.log(filterRestrurant);
               if (filterRestrurant?.length !== 0) {
                 setFilterResturantS(filterRestrurant);
               } else {
@@ -89,7 +90,7 @@ const Body = () => {
         <div className="search p-4 m-4 flex item-center">
           <button
             disabled={searchText === "" ? false : true}
-            className="px-4 py-1 bg-slate-400 m-4 text-zinc-50 rounded-lg disabled:bg-gray-300"
+            className="px-4 py-1 bg-slate-400 m-4 text-zinc-50 rounded-lg disabled:bg-gray-300 hover:bg-slate-600"
             onClick={() => {
               updatedResListByTheirRatings(filterRestrurantS);
             }}
