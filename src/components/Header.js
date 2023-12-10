@@ -29,9 +29,9 @@ const Header = () => {
     }
   }
   return (
-    <div className="flex items-center justify-between shadow-lg">
+    <div className="flex items-center justify-between shadow-xl bg-gray-200">
       <div className="logo-container">
-        <div onClick={() => ReturnHome()}><img className="w-48 cursor-pointer" src={LOGO_URL} /></div>
+        <div onClick={() => ReturnHome()}><img className="h-[80px] w-[150px] rounded-full border border-black cursor-pointer" src={LOGO_URL} /></div>
       </div>
       <div className="flex items-center text-sl">
         <ul className="flex p-4 m-4">

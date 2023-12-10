@@ -18,7 +18,7 @@ it('should load restrurant menu component', async () => {
                 <RestrurantMenuPage />
             </Provider>
         </BrowserRouter>))
-    const accordionHeader = screen.getByText('Bowl (1)');
+    const accordionHeader = screen.getByText('Bowl (2)');
     fireEvent.click(accordionHeader);
-    expect(screen.getAllByTestId("foodItems").length).toBe(1)
+    expect(screen.getAllByTestId("foodItems").length).toBe(2)
 })

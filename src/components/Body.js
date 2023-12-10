@@ -31,6 +31,10 @@ const Body = () => {
   };
 
   const onKeyUpSearchField = (e) => {
+    // const filterRestrurant = filterRestrurantS?.filter((res) =>
+    //   res?.info?.name.toLowerCase().includes(searchText.toLowerCase())
+    // );
+    // setFilterResturantS(filterRestrurant);
     if (e.keyCode === 13) {
       e.preventDefault();
       document.getElementById("searchBtn").click();

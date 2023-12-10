@@ -51,7 +51,15 @@ const ItemMenuOfcards = ({ items }) => {
                                         onClick={() => handleAddButton(item)}>
                                     Add +</button>)} */}
                         </div>
-                        <img src={`${MENU_API_CDN_IMG}${item?.card?.info?.imageId}`} className="w-[180] h-24 rounded-md object-cover border border-solid #f1c675" />
+                        {
+                            item?.card?.info?.imageId ? <img src={`${MENU_API_CDN_IMG}${item?.card?.info?.imageId}`}
+                                className="w-[180] h-24 rounded-md object-cover border border-solid #f1c675" /> :
+                                <div className="w-[180] h-24 rounded-md object-cover border border-solid #f1c675 text-center">
+                                    No image
+                                </div>
+                        }
+                        {/* <img src={`${MENU_API_CDN_IMG}${item?.card?.info?.imageId}`}
+                            className="w-[180] h-24 rounded-md object-cover border border-solid #f1c675" /> */}
                     </div>
                 </div>
             ))}
