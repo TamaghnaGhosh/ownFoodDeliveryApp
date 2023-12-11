@@ -1,6 +1,7 @@
 import React from 'react'
 import { useLocation, useNavigate } from 'react-router-dom';
 import { MENU_API_CDN_IMG } from '../../utils/constants'
+import toast, { Toaster } from "react-hot-toast";
 import { useDispatch, useSelector } from 'react-redux'
 import { addItem, removeItem } from '../../utils/cartSlice';
 
@@ -12,10 +13,20 @@ const ItemMenuOfcards = ({ items }) => {
     const cartItems = useSelector((store) => store?.cart?.items);
 
     const handleAddButton = (product) => {
-        dispatch(addItem(product))
+        dispatch(addItem(product));
+        toast.success('Added to the Cart', {
+            className: "font-ProximaNovaSemiBold",
+            position: "top-center",
+            duration: 1500
+        });
     }
     const handleRemoveButton = (RmVproduct) => {
-        dispatch(removeItem(RmVproduct))
+        dispatch(removeItem(RmVproduct));
+        toast.error('Already added to the Cart', {
+            className: "font-ProximaNovaSemiBold",
+            position: "top-center",
+            duration: 1500
+        });
     }
 
     const goToCart = () => {
@@ -37,19 +48,23 @@ const ItemMenuOfcards = ({ items }) => {
                     </div>
                     <div className='w-3/12 p-4'>
                         <div className='absolute'>
-                            <button className='p-2 mx-10 my-16 w-[100px] bg-white text-green-500 rounded-lg  object-cover border border-solid hover:bg-gray-400 hover:text-white hover:shadow-xl'
+                            {/* <button className='p-2 mx-10 my-16 w-[100px] bg-white text-green-500 rounded-lg  object-cover border border-solid hover:bg-gray-400 hover:text-white hover:shadow-xl'
                                 onClick={() => handleAddButton(item)}>
                                 Add +
-                            </button>
-                            {/* {(cartItems?.find((cart) => cart?.card?.info?.id === item?.card?.info?.id) ?
-                                <button className='p-2 mx-10 my-16 w-[100px] bg-slate-600 text-white shadow-lg rounded-lg  object-cover border border-solid hover:bg-slate-400'
-                                    onClick={() => {
-                                        goToCart();
-                                        // handleRemoveButton(item);
-                                    }}>
-                                    Go To bag</button> : <button className='p-2 mx-10 my-16 w-[100px] bg-white text-green-500 shadow-lg rounded-lg  object-cover border border-solid hover:bg-green-200'
-                                        onClick={() => handleAddButton(item)}>
-                                    Add +</button>)} */}
+                            </button> */}
+                            {(cartItems?.find((cart) => cart?.card?.info?.id === item?.card?.info?.id) ?
+                                (
+                                    location.pathname === '/cart' ?
+                                        <button className='p-2 mx-10 my-16 w-[100px] bg-red-500 text-white shadow-lg rounded-lg  object-cover border border-solid hover:bg-red-300'
+                                            onClick={() => handleRemoveButton(item?.card?.info?.id)}>
+                                            Remove -</button> :
+                                        <button className='p-2 mx-10 my-16 w-[100px] bg-slate-600 text-white shadow-lg rounded-lg  object-cover border border-solid hover:bg-slate-400'
+                                            onClick={() => goToCart()}>Go To Cart</button>
+                                ) :
+                                <button className='p-2 mx-10 my-16 w-[100px] bg-white text-green-500 shadow-lg rounded-lg  object-cover border border-solid hover:bg-green-200'
+                                    onClick={() => handleAddButton(item)}>
+                                    Add +</button>
+                            )}
                         </div>
                         {
                             item?.card?.info?.imageId ? <img src={`${MENU_API_CDN_IMG}${item?.card?.info?.imageId}`}
@@ -58,11 +73,10 @@ const ItemMenuOfcards = ({ items }) => {
                                     No image
                                 </div>
                         }
-                        {/* <img src={`${MENU_API_CDN_IMG}${item?.card?.info?.imageId}`}
-                            className="w-[180] h-24 rounded-md object-cover border border-solid #f1c675" /> */}
                     </div>
                 </div>
             ))}
+            <Toaster />
         </div>
     )
 }
