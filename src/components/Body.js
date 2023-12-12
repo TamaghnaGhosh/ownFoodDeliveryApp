@@ -17,7 +17,7 @@ const Body = () => {
   // useFetchRestrurants custom hooks
   const { filterRestrurantS, setFilterResturantS, fetchResturants, searchText, setSearchText } = useFetchRestrurants();
 
-  // console.log(filterRestrurantS);
+  console.log(filterRestrurantS);
 
   const TopRatedHigherOrderComponents = WithLabelTopRatedRestrurants(ResrtrurantCard);
 

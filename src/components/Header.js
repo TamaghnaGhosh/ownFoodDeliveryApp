@@ -36,11 +36,11 @@ const Header = () => {
       <div className="flex items-center text-sl">
         <ul className="flex p-4 m-4">
           <li className="px-4 text-lg hover:text-yellow-500">Online Status: {onLineStatus ? "🟢" : "🔴"}</li>
-          <li className="px-4 font-bold text-lg"><NavLink to={""} style={navLinkStyle}>Home</NavLink></li>
-          <li className="px-4 text-lg font-bold"><NavLink to={"about"} style={navLinkStyle}>About us</NavLink></li>
-          <li className="px-4 text-lg font-bold"><NavLink to={"contact"} style={navLinkStyle}>contact us</NavLink></li>
-          <li className="px-4 text-lg font-bold"><NavLink to={"groceries"} style={navLinkStyle}>Grocery</NavLink></li>
-          <li className="px-4 text-lg font-bold hover:text-yellow-500 cursor-pointer"><span className="text-green-600 font-bold text-lg ">({cartItems.length})</span> <NavLink to={"cart"} style={navLinkStyle}>Cart</NavLink></li>
+          <li className="px-4 font-semibold text-lg"><NavLink to={""} style={navLinkStyle}>Home</NavLink></li>
+          <li className="px-4 text-lg font-semibold"><NavLink to={"about"} style={navLinkStyle}>About us</NavLink></li>
+          <li className="px-4 text-lg font-semibold"><NavLink to={"contact"} style={navLinkStyle}>contact us</NavLink></li>
+          <li className="px-4 text-lg font-semibold"><NavLink to={"groceries"} style={navLinkStyle}>Grocery</NavLink></li>
+          <li className="px-4 text-lg font-semibold hover:text-yellow-500 cursor-pointer"><span className="text-green-600 font-semibold text-lg ">({cartItems.length})</span> <NavLink to={"cart"} style={navLinkStyle}>Cart</NavLink></li>
           <li className="px-4 text-lg hover:text-yellow-500 font-bold">{loggedInUser}</li>
           <button
             className="button-logIn-logOut px-1 py-1 bg-slate-400 rounded-lg text-zinc-50"
