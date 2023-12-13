@@ -1,9 +1,9 @@
 import React from 'react'
 import { useLocation, useNavigate } from 'react-router-dom';
 import { MENU_API_CDN_IMG } from '../../utils/constants'
-import toast, { Toaster } from "react-hot-toast";
 import { useDispatch, useSelector } from 'react-redux'
 import { addItem, removeItem } from '../../utils/cartSlice';
+import useTostify from '../../utils/useTostify';
 
 const ItemMenuOfcards = ({ items }) => {
     const location = useLocation();
@@ -14,19 +14,12 @@ const ItemMenuOfcards = ({ items }) => {
 
     const handleAddButton = (product) => {
         dispatch(addItem(product));
-        toast.success('Added to the Cart', {
-            className: "font-ProximaNovaSemiBold",
-            position: "top-center",
-            duration: 1500
-        });
+        useTostify({ toastType: 'success', toastName: 'Added to the Cart' })
     }
+
     const handleRemoveButton = (RmVproduct) => {
         dispatch(removeItem(RmVproduct));
-        toast.error('Already added to the Cart', {
-            className: "font-ProximaNovaSemiBold",
-            position: "top-center",
-            duration: 1500
-        });
+        useTostify({ toastType: 'error', toastName: 'Already added to the Cart' })
     }
 
     const goToCart = () => {
@@ -76,7 +69,6 @@ const ItemMenuOfcards = ({ items }) => {
                     </div>
                 </div>
             ))}
-            <Toaster />
         </div>
     )
 }

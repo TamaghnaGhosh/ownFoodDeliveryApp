@@ -3,7 +3,6 @@ import ReactDOM from "react-dom/client";
 import Header from "./components/Header";
 import Body from "./components/Body";
 import Footer from "./components/Footer";
-
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 
 import Contact from "./components/Contact";
@@ -13,8 +12,7 @@ import Cart from "./components/Cart";
 import UserContext from "./utils/UserContext";
 import { Provider } from "react-redux";
 import appStore from "./utils/appStore";
-
-
+import { Toaster } from "react-hot-toast";
 
 //import About from "./components/About";
 const About = lazy(() => import("./components/About"));
@@ -34,18 +32,22 @@ const AppLayout = () => {
   }, []);
 
   return (
-    <Provider store={appStore}>
-      <UserContext.Provider value={{ loggedInUser: loginName, setLoginName }}>
-        <div className="text-center">
-          <Header />
+    <>
+      <Provider store={appStore}>
+        <UserContext.Provider value={{ loggedInUser: loginName, setLoginName }}>
+          <div className="text-center">
+            <Header />
 
-          {/* This Outlet element is replacing children elements */}
-          <Outlet />
+            {/* This Outlet element is replacing children elements */}
+            <Outlet />
 
-          <Footer />
-        </div>
-      </UserContext.Provider>
-    </Provider>
+            <Footer />
+          </div>
+        </UserContext.Provider>
+      </Provider>
+      
+      <Toaster />
+    </>
   );
 };
 

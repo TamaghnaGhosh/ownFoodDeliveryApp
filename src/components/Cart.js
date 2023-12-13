@@ -3,10 +3,7 @@ import emptycart from "../../public/images/empty-cart.webp";
 import ItemMenuOfcards from './RestrurantItems/ItemMenuOfcards'
 import { clearCart } from '../utils/cartSlice';
 import { Link } from 'react-router-dom';
-import toast, { Toaster } from "react-hot-toast";
-
-
-
+import useTostify from '../utils/useTostify';
 
 const Cart = () => {
     // subscribing to the store using a selector
@@ -16,11 +13,7 @@ const Cart = () => {
 
     const handleClearCart = () => {
         dispatch(clearCart());
-        toast.success('Clear All the Cart', {
-            className: "font-ProximaNovaSemiBold",
-            position: "top-center",
-            duration: 1500
-        });
+        useTostify({ toastType: 'success', toastName: 'Clear All the Cart' })
     }
     return (
         <>
@@ -38,7 +31,6 @@ const Cart = () => {
                         : <ItemMenuOfcards items={cartItems} />}
                 </div>
             </div>
-            <Toaster />
         </>
     )
 }
