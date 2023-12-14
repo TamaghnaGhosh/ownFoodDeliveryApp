@@ -17,8 +17,8 @@ const Body = () => {
   // useFetchRestrurants custom hooks
   const { filterRestrurantS, setFilterResturantS, fetchResturants, searchText, setSearchText } = useFetchRestrurants();
 
-  console.log(filterRestrurantS);
 
+  // Higher order Components
   const TopRatedHigherOrderComponents = WithLabelTopRatedRestrurants(ResrtrurantCard);
 
   //check internet connectivity customs hook/conditional Rendering
@@ -40,6 +40,8 @@ const Body = () => {
       document.getElementById("searchBtn").click();
     }
   }
+
+  // console.log(filterRestrurantS);
 
   return (filterRestrurantS?.length === 0 || filterRestrurantS === undefined) ? (
     <Shimmer />

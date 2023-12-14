@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { addItem, removeItem } from '../../utils/cartSlice';
 import useTostify from '../../utils/useTostify';
 
-const ItemMenuOfcards = ({ items }) => {
+const ItemMenuOfcards = ({ items, filterMenuItemSearchCardProps }) => {
     const location = useLocation();
     const navigate = useNavigate();
 
@@ -13,7 +13,12 @@ const ItemMenuOfcards = ({ items }) => {
     const cartItems = useSelector((store) => store?.cart?.items);
 
     const handleAddButton = (product) => {
-        dispatch(addItem(product));
+        if (filterMenuItemSearchCardProps === "filterMenuItemSearchCardProps") {
+            const cardPopertyAdd = { 'card': product };
+            dispatch(addItem(cardPopertyAdd));
+        } else {
+            dispatch(addItem(product));
+        }
         useTostify({ toastType: 'success', toastName: 'Added to the Cart' })
     }
 
@@ -25,19 +30,22 @@ const ItemMenuOfcards = ({ items }) => {
     const goToCart = () => {
         navigate('/cart');
     }
+
+    let uniqueItems = (items);
+
     return (
-        <div>
-            {items?.map((item, i) => (
+        <div className={filterMenuItemSearchCardProps === "filterMenuItemSearchCardProps" ? "w-6/12 mx-auto my-4 bg-gray-50 shadow-lg p-4 cursor-pointer" : null}>
+            {uniqueItems?.map((item, i) => (
                 <div
                     data-testid="foodItems"
-                    key={item?.card?.info?.id}
+                    key={item?.card?.info?.id || item?.info?.id}
                     className='p-2 m-2 border-gray-200 border-b-2 text-left flex justify-between'>
                     <div className='w-9/12'>
                         <div className='py-2'>
-                            <span>{item?.card?.info?.name}</span>
-                            <span className='font-semibold'> - ₹{item?.card?.info?.price / 100 || item?.card?.info?.defaultPrice / 100}</span>
+                            <span>{item?.card?.info?.name || item?.info?.name}</span>
+                            <span className='font-semibold'> - ₹{(item?.card?.info?.price || item.info?.price) / 100 || (item?.card?.info?.defaultPrice || item.info?.defaultPrice) / 100}</span>
                         </div>
-                        <p className='text-xs'>{item?.card?.info?.description}</p>
+                        <p className='text-xs'>{item?.card?.info?.description || item?.info?.description}</p>
                     </div>
                     <div className='w-3/12 p-4'>
                         <div className='absolute'>
@@ -45,11 +53,11 @@ const ItemMenuOfcards = ({ items }) => {
                                 onClick={() => handleAddButton(item)}>
                                 Add +
                             </button> */}
-                            {(cartItems?.find((cart) => cart?.card?.info?.id === item?.card?.info?.id) ?
+                            {(cartItems?.find((cart) => cart?.card?.info?.id === (item?.card?.info?.id || item?.info?.id)) ?
                                 (
                                     location.pathname === '/cart' ?
                                         <button className='p-2 mx-10 my-16 w-[100px] bg-red-500 text-white shadow-lg rounded-lg  object-cover border border-solid hover:bg-red-300'
-                                            onClick={() => handleRemoveButton(item?.card?.info?.id)}>
+                                            onClick={() => handleRemoveButton((item?.card?.info?.id))}>
                                             Remove -</button> :
                                         <button className='p-2 mx-10 my-16 w-[100px] bg-slate-600 text-white shadow-lg rounded-lg  object-cover border border-solid hover:bg-slate-400'
                                             onClick={() => goToCart()}>Go To Cart</button>
@@ -60,7 +68,7 @@ const ItemMenuOfcards = ({ items }) => {
                             )}
                         </div>
                         {
-                            item?.card?.info?.imageId ? <img src={`${MENU_API_CDN_IMG}${item?.card?.info?.imageId}`}
+                            (item?.card?.info?.imageId || item?.info?.imageId) ? <img src={`${MENU_API_CDN_IMG}${item?.card?.info?.imageId || item?.info?.imageId}`}
                                 className="w-[180] h-24 rounded-md object-cover border border-solid #f1c675" /> :
                                 <div className="w-[180] h-24 rounded-md object-cover border border-solid #f1c675 text-center">
                                     No image

@@ -24,7 +24,7 @@ const Header = () => {
     const { isActive } = props;
 
     return {
-      color: isActive ? "#006400" : "black",
+      color: isActive ? "#00ab41" : "black",
       textDecoration: isActive ? "none" : "none",
     }
   }
