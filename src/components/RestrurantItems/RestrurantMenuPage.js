@@ -3,9 +3,10 @@ import Shimmer from '../Shimmer';
 import { useParams } from 'react-router-dom';
 import Error from '../Error';
 import useResrurantMenu from '../../utils/useResrurantMenu';
-import useFilterMenusByVegOnly from '../../utils/useFilterMenusByVegOnly';
+import { useFilterMenusByVegOnly } from '../../utils/useFilterMenusByVegOnly';
 import RestrurantMenuCategoryCard from './RestrurantMenuCategoryCard';
 import ItemMenuOfcards from './ItemMenuOfcards';
+import useItemsSeacrhmenu from '../../utils/useItemsSeacrhmenu';
 
 const RestrurantMenuPage = () => {
 
@@ -35,7 +36,7 @@ const RestrurantMenuPage = () => {
     // filter Menus By Veg Only Hooks
     const filterMenusByVegOnly = useFilterMenusByVegOnly(allTheCardItems);
 
-    function filterMenusByVegOnlyFunc(allTheCardItems, filterMenusByVegOnly) {
+    const filterMenusByVegOnlyFunc = (allTheCardItems, filterMenusByVegOnly) => {
         const clonedArray = JSON.parse(JSON.stringify(allTheCardItems));
         //Es6 feature
         // const clonedArray = structuredClone(allTheCardItems);
@@ -50,23 +51,16 @@ const RestrurantMenuPage = () => {
         setClonedArrayAddVegItemCard(clonedArray);
     }
 
+    //active card of accordion
     const onItemClick = (index) => {
         setActiveIndex(activeIndex === index ? null : index);
     };
 
+    //Searching for items from the items menu list
+    const { onKeyUpSearchField } = useItemsSeacrhmenu(allTheCardItems, clonedArrayAddVegItemCard, resturantVegMenuToggleButton, setFilterMenuItemCard);
+
     const { name, cuisines, costForTwoMessage } = (resturantMenu?.cards[0]?.card?.card?.info);
 
-
-    const allTheCardItemsMenuSearch = allTheCardItems?.map((item) => item?.card?.card?.itemCards.map((item) => item.card));
-
-    const onKeyUpSearchField = (e) => {
-        if (e.target.value !== "") {
-            const filterRestrurantMenu = allTheCardItemsMenuSearch?.flat(Infinity)?.filter((res) =>
-                res?.info?.name?.toLowerCase().includes(e.target.value.toLowerCase())
-            );
-            setFilterMenuItemCard(filterRestrurantMenu);
-        }
-    }
     return (
         <div className='text-center'>
             <h2 className='font-bold text-2xl my-4'>{name} </h2>
@@ -91,9 +85,9 @@ const RestrurantMenuPage = () => {
                 autoComplete="false"
                 onKeyUp={onKeyUpSearchField}
                 onChange={(e) => setSearchMenuText(e.target.value)}
-                value={searchMenuText}
+                value={searchMenuText.trim()}
             />
-            {(filterMenuItemCard.length !== 0 && searchMenuText !== "") ? <ItemMenuOfcards items={filterMenuItemCard} filterMenuItemSearchCardProps={'filterMenuItemSearchCardProps'} />
+            {(filterMenuItemCard?.length !== 0 && searchMenuText !== "") ? <ItemMenuOfcards items={filterMenuItemCard} filterMenuItemSearchCardProps={'filterMenuItemSearchCardProps'} />
                 : (resturantVegMenuToggleButton ? clonedArrayAddVegItemCard : allTheCardItems)?.map((categories, index) =>
                 (
                     <RestrurantMenuCategoryCard item={categories?.card?.card}

@@ -1,7 +1,5 @@
-const useFilterMenusByVegOnly = (resturantMenuAll) => {
+export const useFilterMenusByVegOnly = (resturantMenuAll) => {
 
-    const array = resturantMenuAll?.map(card => card?.card?.card?.itemCards?.filter(item => item?.card?.info?.itemAttribute?.vegClassifier === "VEG"));
-    return array;
+    return resturantMenuAll?.map(card => card?.card?.card?.itemCards?.filter(item => item?.card?.info?.itemAttribute?.vegClassifier === "VEG"));
 }
-export default useFilterMenusByVegOnly;
 // (card?.card?.card?.itemCards?.filter(item => item?.card?.info?.itemAttribute?.vegClassifier === "VEG"))

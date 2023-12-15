@@ -24,7 +24,7 @@ const Body = () => {
   //check internet connectivity customs hook/conditional Rendering
   if (onLineStatus === false) return <h1>Please check the internet connection in your system</h1>;
 
-  //update the Restaurants by their rating
+  //create a clickable update button the Restaurants by their rating
   const updatedResListByTheirRatings = (resList) => {
     const upadatedReslist = resList.filter((res) => res?.info?.avgRating > 4.3);
     setFilterResturantS(upadatedReslist);
