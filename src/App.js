@@ -13,6 +13,7 @@ import UserContext from "./utils/UserContext";
 import { Provider } from "react-redux";
 import appStore from "./utils/appStore";
 import { Toaster } from "react-hot-toast";
+import ScrollTop from "./ScrollTop";
 
 //import About from "./components/About";
 const About = lazy(() => import("./components/About"));
@@ -21,13 +22,12 @@ const About = lazy(() => import("./components/About"));
 const Grocery = lazy(() => import("./components/Grocery"));
 
 const AppLayout = () => {
-
   const [loginName, setLoginName] = useState("");
 
   useEffect(() => {
     const data = {
-      name: "Tell me what to write"
-    }
+      name: "Tell me what to write",
+    };
     setLoginName(data.name);
   }, []);
 
@@ -36,6 +36,10 @@ const AppLayout = () => {
       <Provider store={appStore}>
         <UserContext.Provider value={{ loggedInUser: loginName, setLoginName }}>
           <div className="text-center">
+            {/* We can always see the top view whenever the path changes */}
+
+            <ScrollTop />
+
             <Header />
 
             {/* This Outlet element is replacing children elements */}
@@ -45,7 +49,7 @@ const AppLayout = () => {
           </div>
         </UserContext.Provider>
       </Provider>
-      
+      {/* {The Global Totaser is here} */}
       <Toaster />
     </>
   );
@@ -58,34 +62,42 @@ const appLayout = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Body />
+        element: <Body />,
       },
       {
         path: "/about",
-        element: <Suspense fallback={<h1>Loading....</h1>}><About /></Suspense>
+        element: (
+          <Suspense fallback={<h1>Loading....</h1>}>
+            <About />
+          </Suspense>
+        ),
       },
       {
         path: "/contact",
-        element: <Contact />
+        element: <Contact />,
       },
       {
         path: "/cart",
-        element: <Cart />
+        element: <Cart />,
       },
       {
         path: "/groceries",
-        element: <Suspense fallback={<h1>Loading....</h1>}><Grocery /></Suspense>
+        element: (
+          <Suspense fallback={<h1>Loading....</h1>}>
+            <Grocery />
+          </Suspense>
+        ),
       },
       {
         path: "/restrurants/:resId",
-        element: <RestrurantMenuPage />
-      }
+        element: <RestrurantMenuPage />,
+      },
     ],
 
     //This component helps when it gets a 404 error (errorElement)
-    errorElement: <Error />
+    errorElement: <Error />,
   },
-])
+]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
