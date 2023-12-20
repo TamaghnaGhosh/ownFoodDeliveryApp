@@ -59,7 +59,7 @@ const RestrurantMenuPage = () => {
     //Searching for items from the items menu list
     const { onKeyUpSearchField } = useItemsSeacrhmenu(allTheCardItems, clonedArrayAddVegItemCard, resturantVegMenuToggleButton, setFilterMenuItemCard);
 
-    const { name, cuisines, costForTwoMessage } = (resturantMenu?.cards[0]?.card?.card?.info);
+    const { name, cuisines, costForTwoMessage } = (resturantMenu?.cards[0]?.card?.card?.info || resturantMenu?.cards[2]?.card?.card?.info);
 
     return (
         <div className='text-center'>
