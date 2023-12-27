@@ -15,9 +15,9 @@ const useFetchRestrurants = () => {
       );
       const json = await data.json();
       setFilterResturantS(
-        json?.data?.cards?.[2]?.card?.card?.gridElements?.infoWithStyle
+        json?.data?.cards?.[1]?.card?.card?.gridElements?.infoWithStyle
           ?.restaurants ||
-          json?.data?.cards?.[3]?.card?.card?.gridElements?.infoWithStyle
+          json?.data?.cards?.[2]?.card?.card?.gridElements?.infoWithStyle
             ?.restaurants
       );
       console.log(json?.data?.cards);
