@@ -35,7 +35,7 @@ const AppLayout = () => {
     <>
       <Provider store={appStore}>
         <UserContext.Provider value={{ loggedInUser: loginName, setLoginName }}>
-          <div className="text-center">
+          <div className="md:text-center">
             {/* We can always see the top view whenever the path changes */}
 
             <ScrollTop />

@@ -47,7 +47,7 @@ const Body = () => {
     <Shimmer />
   ) : (
     <div className="body">
-      <div className="filter flex">
+      <div className="filter flex flex-col md:flex-row">
         <div className="search p-4 m-4">
           <input
             data-testid="seachInputTestId"

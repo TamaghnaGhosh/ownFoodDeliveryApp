@@ -29,12 +29,12 @@ const Header = () => {
     }
   }
   return (
-    <div className="flex items-center justify-between shadow-xl bg-gray-200">
+    <div className="flex items-center justify-between flex-col md:flex-row bg-gray-200 shadow-xl w-auto">
       <div className="logo-container">
         <div onClick={() => ReturnHome()}><img className="h-[80px] w-[150px] rounded-full border border-black cursor-pointer m-4" src={LOGO_URL} /></div>
       </div>
       <div className="flex items-center text-sl">
-        <ul className="flex p-4 m-4">
+        <ul className="flex p-4 m-4 flex-col md:flex-row">
           <li className="px-4 text-lg hover:text-yellow-500">Online Status: {onLineStatus ? "🟢" : "🔴"}</li>
           <li className="px-4 font-semibold text-lg"><NavLink to={""} style={navLinkStyle}>Home</NavLink></li>
           <li className="px-4 text-lg font-semibold"><NavLink to={"about"} style={navLinkStyle}>About us</NavLink></li>
