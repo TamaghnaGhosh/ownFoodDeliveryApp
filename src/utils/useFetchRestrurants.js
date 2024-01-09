@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 
 const useFetchRestrurants = () => {
   const [filterRestrurantS, setFilterResturantS] = useState([]);
+  const [copyRestrurants, setCopyRestrurants] = useState([]);
   const [searchText, setSearchText] = useState("");
 
   useEffect(() => {
@@ -20,7 +21,13 @@ const useFetchRestrurants = () => {
           json?.data?.cards?.[2]?.card?.card?.gridElements?.infoWithStyle
             ?.restaurants
       );
-      console.log(json?.data?.cards);
+      setCopyRestrurants(
+        json?.data?.cards?.[3]?.card?.card?.gridElements?.infoWithStyle
+          ?.restaurants ||
+          json?.data?.cards?.[2]?.card?.card?.gridElements?.infoWithStyle
+            ?.restaurants
+      );
+      // console.log(json?.data?.cards);
     } catch (error) {
       debugger;
       console.log(error);
@@ -32,6 +39,8 @@ const useFetchRestrurants = () => {
     fetchResturants,
     searchText,
     setSearchText,
+    setCopyRestrurants,
+    copyRestrurants,
   };
 };
 
