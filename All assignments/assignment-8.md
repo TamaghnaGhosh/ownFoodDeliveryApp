@@ -92,6 +92,25 @@ In upper example we are registering a function with setTimeout in componentDidMo
 ## why useEffect can't have async callback function
 useEffect hook expect its callback function to return either a function or nothing but async function always return a promise or any other primitive datatype wrapped in promise and promise can't be called as function . not able to return a cleanUp function can cause many issues in our app most common is `Memory Leak`.
 
+The useEffect hook in React cannot have an asynchronous callback function directly because it is designed to handle side effects, such as data fetching, subscriptions, manual DOM manipulations, etc. Asynchronous functions return a promise, and useEffect expects either a synchronous function or a function that returns a cleanup function (or nothing).
+
+If you need to perform asynchronous operations inside useEffect, you can define an asynchronous function inside the useEffect and then immediately invoke it.
+
+useEffect(() => {
+  const fetchData = async () => {
+    try {
+      // Your asynchronous operations here
+      const data = await fetchDataFromAPI();
+      // Do something with the data
+    } catch (error) {
+      // Handle errors
+    }
+  };
+
+  fetchData(); // Immediately invoke the asynchronous function
+}, [/* dependencies */]);
+
+
 ## createHashRouter and createMemoryRouter
 react router dom gives three types of routers
 ## 1- createBrowserRouter - 
