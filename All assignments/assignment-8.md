@@ -96,6 +96,7 @@ The useEffect hook in React cannot have an asynchronous callback function direct
 
 If you need to perform asynchronous operations inside useEffect, you can define an asynchronous function inside the useEffect and then immediately invoke it.
 
+````````````
 useEffect(() => {
   const fetchData = async () => {
     try {
@@ -110,6 +111,7 @@ useEffect(() => {
   fetchData(); // Immediately invoke the asynchronous function
 }, [/* dependencies */]);
 
+`````````````
 
 ## createHashRouter and createMemoryRouter
 react router dom gives three types of routers
