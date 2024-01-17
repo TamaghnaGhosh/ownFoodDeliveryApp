@@ -5,13 +5,16 @@ import Body from "./components/Body";
 import Footer from "./components/Footer";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 
+import { Provider } from "react-redux";
+import { PersistGate } from "redux-persist/integration/react";
+import appStore, { persistor } from "./utils/appStore";
+
 import Contact from "./components/Contact";
 import Error from "./components/Error";
 import RestrurantMenuPage from "./components/RestrurantItems/RestrurantMenuPage";
 import Cart from "./components/Cart";
 import UserContext from "./utils/UserContext";
-import { Provider } from "react-redux";
-import appStore from "./utils/appStore";
+
 import { Toaster } from "react-hot-toast";
 import ScrollTop from "./ScrollTop";
 
@@ -34,20 +37,24 @@ const AppLayout = () => {
   return (
     <>
       <Provider store={appStore}>
-        <UserContext.Provider value={{ loggedInUser: loginName, setLoginName }}>
-          <div className="md:text-center">
-            {/* We can always see the top view whenever the path changes */}
+        <PersistGate loading={null} persistor={persistor}>
+          <UserContext.Provider
+            value={{ loggedInUser: loginName, setLoginName }}
+          >
+            <div className="md:text-center">
+              {/* We can always see the top view whenever the path changes */}
 
-            <ScrollTop />
+              <ScrollTop />
 
-            <Header />
+              <Header />
 
-            {/* This Outlet element is replacing children elements */}
-            <Outlet />
+              {/* This Outlet element is replacing children elements */}
+              <Outlet />
 
-            <Footer />
-          </div>
-        </UserContext.Provider>
+              <Footer />
+            </div>
+          </UserContext.Provider>
+        </PersistGate>
       </Provider>
       {/* {The Global Totaser is here} */}
       <Toaster />
