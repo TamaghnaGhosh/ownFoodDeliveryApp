@@ -56,7 +56,7 @@ const Body = () => {
     <Shimmer />
   ) : (
     <div className="body">
-      <div className="filter flex flex-col md:flex-row">
+      <div className="filter flex flex-col md:flex-row justify-center md:justify-normal">
         <div className="search p-4 m-4">
           <input
             data-testid="seachInputTestId"
@@ -107,7 +107,7 @@ const Body = () => {
           />
         </div>
       </div>
-      <div className="res-container flex flex-wrap justify-start p-1">
+      <div className="res-container flex flex-wrap justify-center md:justify-normal p-1">
         {filterRestrurantS?.map((resDataObj, i) => (
           <Link
             to={`/restrurants/${resDataObj?.info?.id}`}
