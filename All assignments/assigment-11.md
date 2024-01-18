@@ -14,7 +14,7 @@ and then pass it down to them via props. This is known as lifting state up, and 
 - Functionality: It "provides" the data or state to all its descendants, allowing them to access it without explicitly passing it through props.
 - Usage: Wrap the parent component's JSX with <MyContext.Provider value={myData}>...</MyContext.Provider>. The value prop contains the data you want to share.
 
-``````
+```
 const MyContext = React.createContext();
 
 function MyComponent() {
@@ -25,16 +25,16 @@ function MyComponent() {
     </MyContext.Provider>
   );
 }
-``````
+```
 
 # Context Consumer:
 
 - Definition: The Context Consumer is a component that subscribes to the data provided by the Context Provider.
 - Functionality: It allows components to consume or use the shared data without being direct children of the Context Provider.
-- Usage: Wrap the part of the component tree where you want to access the context with 
-<MyContext.Consumer>{(value) => /_ render something based on the context value _/}</MyContext.Consumer>.
+- Usage: Wrap the part of the component tree where you want to access the context with
+  <MyContext.Consumer>{(value) => /_ render something based on the context value _/}</MyContext.Consumer>.
 
-``````
+```
 function ChildComponent() {
   return (
     <MyContext.Consumer>
@@ -42,13 +42,13 @@ function ChildComponent() {
     </MyContext.Consumer>
   );
 }
-``````
+```
 
 # If you don’t pass a value to the provider does it take the default value?
 
 - Yes, if you don't provide a value prop to the Context Provider, it will take the default value specified when creating the context using React.createContext(defaultValue).
 
-``````
+```
 const MyContext = React.createContext("Default Value");
 
 function MyComponent() {
@@ -66,4 +66,5 @@ function ChildComponent() {
     </MyContext.Consumer>
   );
 }
-``````
+```
+- In this example, since the MyContext.Provider does not have a value prop, it will use the default value "Default Value" that was specified when creating the context. Therefore, the ChildComponent will render a <p> element with the text "Default Value".
