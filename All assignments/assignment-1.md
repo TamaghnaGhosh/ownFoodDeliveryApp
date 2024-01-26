@@ -45,3 +45,50 @@ Async--It fetch the scripts parallely with parsing and when fetching is complete
 Defer--It fetch the scripts parallely with parsing and when parsing is completed it executes all the scripts.It gurantee the order of execution of scripts.
 
 
+### Async Attribute:
+The async attribute allows the script to be executed asynchronously. This means that the script will not block the parsing of the HTML document, and it will continue to load and parse the HTML while the script is being downloaded and executed.
+### Defer Attribute:
+The defer attribute, similar to async, allows the script to be executed asynchronously. However, the key difference is that the script will be executed in order, after the HTML document has been fully parsed.
+
+# Example:
+```````
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async and Defer Example</title>
+    <!-- Include a script with async attribute -->
+    <script async src="async-script.js"></script>
+    <!-- Include a script with defer attribute -->
+    <script defer src="defer-script.js"></script>
+</head>
+<body>
+    <!-- Your HTML content goes here -->
+</body>
+</html>
+
+```````
+In this example, async-script.js and defer-script.js are JavaScript files. The async-script.js will be executed asynchronously, meaning it won't wait for the HTML parsing to complete. On the other hand, defer-script.js will be executed in order after the HTML parsing is done.
+
+Make sure to use these attributes based on your specific requirements. If script order matters and you want to execute them in order, use defer. If order doesn't matter and you want them to be loaded and executed as soon as possible, use async.
+
+### If you don't specify the async or defer attribute, 
+the default behavior is that the script is executed synchronously and will block the parsing of the HTML document until the script has been completely downloaded and executed.
+```````
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Default Script Example</title>
+    <!-- Include a script without async or defer attribute (synchronous) -->
+    <script src="regular-script.js"></script>
+</head>
+<body>
+    <!-- Your HTML content goes here -->
+</body>
+</html>
+
+```````
+In this case, regular-script.js will be executed synchronously, and the HTML parsing will be blocked until the script is fully downloaded and executed. This might lead to slower page loading times, especially if the script is large or takes time to execute. Using async or defer can help improve page load performance in such cases.
