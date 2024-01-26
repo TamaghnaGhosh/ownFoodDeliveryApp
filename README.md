@@ -1,1 +1,1 @@
-### This is a food delivery app using React js and Redux.
+### This is a food delivery app using React js, Redux-toolkit, Parcel, Tailwind-css & Redux-persist also.
