@@ -1,1 +1,1 @@
-### Namate-React 
+### This is a food delivery app using React js and Redux.
