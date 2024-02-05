@@ -14,6 +14,8 @@ const useResrurantMenu = (resId) => {
       const data = await fetch(
         window.innerWidth > 1300
           ? `${MENU_API}${resId}&catalog_qa=undefined&submitAction=ENTER`
+          : window.innerWidth <= 1300 && window.innerWidth > 600
+          ? `${MENU_API}${resId}&catalog_qa=undefined&submitAction=ENTER`
           : `${MENU_API_MOBILE}${resId}&isMenuUx4=true&submitAction=ENTER`
       );
       const result = await data?.json();
