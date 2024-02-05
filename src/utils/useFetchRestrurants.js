@@ -58,7 +58,7 @@ const useFetchRestrurants = () => {
       }
 
       const response = await fetch(endpoint);
-      const json = await response.json();
+      const json = await response?.json();
 
       const selectResData = getSelectedData(json);
 
@@ -80,11 +80,11 @@ const useFetchRestrurants = () => {
           ?.restaurants || [];
     } else {
       const filterMobileRestaurantSearch = json?.data?.success?.cards?.filter(
-        (c) => c?.gridWidget.gridElements.infoWithStyle.restaurants
+        (c) => c?.gridWidget?.gridElements?.infoWithStyle?.restaurants
       );
       selectedData =
-        filterMobileRestaurantSearch?.[0]?.gridWidget.gridElements.infoWithStyle
-          .restaurants || [];
+        filterMobileRestaurantSearch?.[0]?.gridWidget?.gridElements
+          ?.infoWithStyle?.restaurants || [];
     }
     return selectedData;
   };
