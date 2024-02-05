@@ -56,7 +56,7 @@ const useFetchRestrurants = () => {
         // mobile
         endpoint = `https://corsproxy.plentygram.com/https://www.swiggy.com/mapi/homepage/getCards?lat=${latitude}&lng=${longitude}`;
       }
-
+      
       const response = await fetch(endpoint);
       const json = await response?.json();
 
@@ -72,6 +72,13 @@ const useFetchRestrurants = () => {
   const getSelectedData = (json) => {
     let selectedData = [];
     if (window.innerWidth > 1300) {
+      const filterRestaurantSearch = json?.data?.cards?.filter(
+        (c) => c?.card?.card?.gridElements?.infoWithStyle?.restaurants
+      );
+      selectedData =
+        filterRestaurantSearch?.[0]?.card?.card?.gridElements?.infoWithStyle
+          ?.restaurants || [];
+    } else if (window.innerWidth <= 1300 && window.innerWidth > 600) {
       const filterRestaurantSearch = json?.data?.cards?.filter(
         (c) => c?.card?.card?.gridElements?.infoWithStyle?.restaurants
       );
