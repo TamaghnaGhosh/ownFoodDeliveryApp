@@ -42,5 +42,5 @@ it('should load restrurant menu component', async () => {
 
     expect(screen.getAllByTestId("foodItems").length).toBe(6);
 
-    expect(screen.getByText('Cart is empty. Add items to the cart!')).toBeInTheDocument();
+    expect(screen.getByText('Your cart is empty')).toBeInTheDocument();
 })
