@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { CORS_API_KEY } from "./constants";
 
 const useFetchRestrurants = () => {
   const [filterRestrurantS, setFilterResturantS] = useState([]);
@@ -45,18 +46,23 @@ const useFetchRestrurants = () => {
       let endpoint;
       const latitude = 12.9351929;
       const longitude = 77.62448069999999;
-
       if (window.innerWidth > 1300) {
         // desktop
-        endpoint = `https://corsproxy.plentygram.com/https://www.swiggy.com/dapi/restaurants/list/v5?lat=${latitude}&lng=${longitude}&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING`;
+        endpoint = `${CORS_API_KEY}${encodeURIComponent(
+          `https://www.swiggy.com/dapi/restaurants/list/v5?lat=${latitude}&lng=${longitude}&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING`
+        )}`;
       } else if (window.innerWidth <= 1300 && window.innerWidth > 600) {
         // tablet
-        endpoint = `https://corsproxy.plentygram.com/https://www.swiggy.com/dapi/restaurants/list/v5?lat=${latitude}&lng=${longitude}&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING`;
+        endpoint = `${CORS_API_KEY}${encodeURIComponent(
+          `https://www.swiggy.com/dapi/restaurants/list/v5?lat=${latitude}&lng=${longitude}&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING`
+        )}`;
       } else {
         // mobile
-        endpoint = `https://corsproxy.plentygram.com/https://www.swiggy.com/mapi/homepage/getCards?lat=${latitude}&lng=${longitude}`;
+        endpoint = `${CORS_API_KEY}${encodeURIComponent(
+          `https://www.swiggy.com/mapi/homepage/getCards?lat=${latitude}&lng=${longitude}`
+        )}`;
       }
-      
+
       const response = await fetch(endpoint);
       const json = await response?.json();
 
