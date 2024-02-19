@@ -16,7 +16,6 @@ const ItemMenuOfcards = ({ items, filterMenuItemSearchCardProps }) => {
     if (filterMenuItemSearchCardProps === "filterMenuItemSearchCardProps") {
       const cardPopertyAdd = { card: product };
       dispatch(addItem(cardPopertyAdd));
-      console.log("🚀 ~ handleAddButton ~ cardPopertyAdd:", cardPopertyAdd);
     } else {
       dispatch(addItem(product));
     }
