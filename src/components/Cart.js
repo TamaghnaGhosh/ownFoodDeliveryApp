@@ -20,7 +20,7 @@ const Cart = () => {
             <div className='text-center m-4 p-4'>
                 <h1 className='text-2xl font-bold'>Cart</h1>
                 {cartItems.length !== 0 && <button className="p-1 m-2 bg-slate-400 rounded-lg text-white" onClick={handleClearCart}>Clear Cart</button>}
-                <div className='w-6/12 m-auto'>
+                <div className='w-full md:w-6/12 m-auto'>
                     {cartItems.length === 0 ?
                         <div className='flex items-center justify-center flex-col'>
                             <img src={emptycart} alt="empty-cart" className='w-72 h-64 object-cover' />

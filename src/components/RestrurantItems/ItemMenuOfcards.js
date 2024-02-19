@@ -62,7 +62,7 @@ const ItemMenuOfcards = ({ items, filterMenuItemSearchCardProps }) => {
               {item?.card?.info?.description || item?.info?.description}
             </p>
           </div>
-          <div className="w-3/12 p-4">
+          <div className="w-full md:w-3/12 p-4">
             <div className="absolute">
               {/* <button className='p-2 mx-10 my-16 w-[100px] bg-white text-green-500 rounded-lg  object-cover border border-solid hover:bg-gray-400 hover:text-white hover:shadow-xl'
                                 onClick={() => handleAddButton(item)}>
