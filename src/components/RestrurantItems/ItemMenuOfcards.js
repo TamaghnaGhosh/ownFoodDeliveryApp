@@ -37,7 +37,7 @@ const ItemMenuOfcards = ({ items, filterMenuItemSearchCardProps }) => {
     <div
       className={
         filterMenuItemSearchCardProps === "filterMenuItemSearchCardProps"
-          ? "w-6/12 mx-auto my-4 bg-gray-50 shadow-lg p-4 cursor-pointer"
+          ? "w-full md:w-6/12 mx-auto my-4 bg-gray-50 shadow-lg p-4 cursor-pointer"
           : null
       }
     >
