@@ -16,7 +16,7 @@ const ResrtrurantCard = (props) => {
       />
       <h3 className="font-bold py-4 text-lg">{name}</h3>
       <h4><span className="font-bold">Cuisines:</span> {cuisines.join(", ")}</h4>
-      <h4 className="flex py-1 px-[30px]"><span className="font-bold">Rating: </span><span className="pl-1">{otherProps?.avgRatingString + " " + "star"}</span></h4>
+      <h4 className="flex py-1 md:px-[30px] px-0"><span className="font-bold">Rating: </span><span className="pl-1">{otherProps?.avgRatingString + " " + "star"}</span></h4>
       <h4 className="font-bold py-1 ">{otherProps?.costForTwo} star</h4>
       <h4><span className="font-bold py-1">Delivery Time:</span> {otherProps.sla?.deliveryTime} mins</h4>
       <h4><span className="font-bold py-1">Logged In:</span> <span className="text-[15px] text-red-500">{loggedInUser}</span></h4>
