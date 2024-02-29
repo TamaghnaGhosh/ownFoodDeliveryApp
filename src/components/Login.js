@@ -72,7 +72,7 @@ const Login = () => {
           handleBlur,
           handleSubmit,
         }) => (
-          <div className="w-full md:w-3/12 absolute p-12 bg-black my-36 mx-auto right-0 left-0 text-white bg-opacity-80">
+          <div className="w-full md:w-3/12 absolute p-12 bg-black my-36 mx-auto right-0 left-0 text-white bg-opacity-70">
             <div className="login-form">
               {/* Passing handleSubmit parameter to html form onSubmit property */}
               <form noValidate onSubmit={handleSubmit}>
@@ -85,7 +85,7 @@ const Login = () => {
                   onBlur={handleBlur}
                   value={values.email}
                   placeholder="Enter your email"
-                  className="p-3 my-2 rounded-md w-full"
+                  className="p-3 my-2 rounded-md bg-[#333] w-full"
                   id="email"
                 />
                 {/* If validation is not passed show errors */}
@@ -103,7 +103,7 @@ const Login = () => {
                   onBlur={handleBlur}
                   value={values.password}
                   placeholder="Enter your password"
-                  className="p-3 my-2 rounded-md w-full"
+                  className="p-3 my-2 rounded-md bg-[#333] w-full"
                 />
                 {/* If validation is not passed show errors */}
                 {/* <p className="error">
