@@ -17,6 +17,7 @@ import UserContext from "./utils/UserContext";
 
 import { Toaster } from "react-hot-toast";
 import ScrollTop from "./ScrollTop";
+import Login from "./components/Login";
 
 //import About from "./components/About";
 const About = lazy(() => import("./components/About"));
@@ -25,7 +26,6 @@ const About = lazy(() => import("./components/About"));
 const Grocery = lazy(() => import("./components/Grocery"));
 
 const AppLayout = () => {
-  
   const [loginName, setLoginName] = useState("");
 
   useEffect(() => {
@@ -97,14 +97,23 @@ const appLayout = createBrowserRouter([
         ),
       },
       {
+        path: "/login",
+        element: <Login/>,
+      },
+      {
         path: "/restrurants/:resId",
         element: <RestrurantMenuPage />,
       },
+      
     ],
 
     //This component helps when it gets a 404 error (errorElement)
     errorElement: <Error />,
   },
+  // {
+  //   path: "login",
+  //   element: <Login/>,
+  // },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
