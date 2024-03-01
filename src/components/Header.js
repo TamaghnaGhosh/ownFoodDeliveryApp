@@ -99,7 +99,7 @@ const Header = () => {
                 </span>
               </button>
             ) : (
-              <button className=" text-lg hover:text-yellow-500 font-bold" onClick={() => navigate("/login")}>
+              <button className="px-4 text-lg hover:text-yellow-500 font-bold" onClick={() => navigate("/login")}>
                 Login
                 <span className={onLineStatus ? "text-[green]" : "text-[red]"}>●</span>
               </button>
