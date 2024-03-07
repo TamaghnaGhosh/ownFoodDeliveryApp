@@ -5,7 +5,7 @@ import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import useFetchRestrurants from "../utils/useFetchRestrurants";
-import { useContext } from "react";
+import { useContext, useDeferredValue } from "react";
 import UserContext from "../utils/UserContext";
 
 const Body = () => {
@@ -22,6 +22,10 @@ const Body = () => {
     setSearchText,
     copyRestrurants,
   } = useFetchRestrurants();
+
+  const deferredSeacrhTextValue = useDeferredValue(searchText);
+
+  const isStale = deferredSeacrhTextValue !== searchText;
 
   // Higher order Components
   const TopRatedHigherOrderComponents =
@@ -61,7 +65,9 @@ const Body = () => {
           <input
             data-testid="seachInputTestId"
             type="text"
-            className="border border-solid border-slate-400 rounded-lg py-[2px] px-2"
+            className={`border border-solid border-slate-400 rounded-lg py-[2px] px-2 ${
+              isStale ? `text-gray-400` : `text-black`
+            }`}
             placeholder="Search Resturants"
             name="search"
             autoComplete="false"
@@ -74,7 +80,7 @@ const Body = () => {
             className="px-4 py-1 bg-slate-400 m-4 rounded-lg text-zinc-50 hover:bg-slate-600"
             onClick={() => {
               const filterRestrurant = copyRestrurants?.filter((res) =>
-                res?.info?.name.toLowerCase().includes(searchText.toLowerCase())
+                res?.info?.name.toLowerCase().includes(deferredSeacrhTextValue.toLowerCase())
               );
               // console.log(filterRestrurant);
               if (filterRestrurant?.length !== 0) {
