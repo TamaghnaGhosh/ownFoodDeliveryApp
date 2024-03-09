@@ -86,7 +86,7 @@ const RestrurantMenuPage = () => {
                 autoComplete="false"
                 onKeyUp={onKeyUpSearchField}
                 onChange={(e) => setSearchMenuText(e.target.value)}
-                value={searchMenuText.trim()}
+                value={searchMenuText}
             />
             {(filterMenuItemCard?.length !== 0 && searchMenuText !== "") ? <ItemMenuOfcards items={filterMenuItemCard} filterMenuItemSearchCardProps={'filterMenuItemSearchCardProps'} />
                 : (resturantVegMenuToggleButton ? clonedArrayAddVegItemCard : allTheCardItems)?.map((categories, index) =>
