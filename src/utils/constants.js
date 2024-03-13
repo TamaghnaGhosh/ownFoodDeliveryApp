@@ -7,15 +7,20 @@ export const LOGO_URL =
 
 // export const MENU_API = "https://corsproxy.io/?https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=12.9351929&lng=77.62448069999999&restaurantId=";
 
-export const CORS_API_KEY = "https://corsproxy.org/?";
+// export const CORS_API_KEY = "https://corsproxy.org/?";
+// export const CORS_API_KEY = "https://crossorigin.me/";
 
-export const MENU_API = `${CORS_API_KEY}${encodeURIComponent(
-  `https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=12.9351929&lng=77.62448069999999&restaurantId=`
-)}`;
+// export const MENU_API = `${CORS_API_KEY}${encodeURIComponent(
+//   `https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=12.9351929&lng=77.62448069999999&restaurantId=`
+// )}`;
 
-export const MENU_API_MOBILE = `${CORS_API_KEY}${encodeURIComponent(
-  `https://www.swiggy.com/mapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=12.9351929&lng=77.62448069999999&restaurantId=`
-)}`;
+export const MENU_API = `https://foodfire.onrender.com/api/menu?page-type=REGULAR_MENU&complete-menu=true&lat=12.9351929&lng=77.62448069999999&&submitAction=ENTER&restaurantId=`;
+
+// export const MENU_API_MOBILE = `${CORS_API_KEY}${encodeURIComponent(
+//   `https://www.swiggy.com/mapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=12.9351929&lng=77.62448069999999&restaurantId=`
+// )}`;
+
+export const MENU_API_MOBILE = `https://foodfire.onrender.com/api/menu?page-type=REGULAR_MENU&complete-menu=true&lat=12.9351929&lng=77.62448069999999&&submitAction=ENTER&restaurantId=`;
 
 export const MENU_API_CDN_IMG =
   "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/";
