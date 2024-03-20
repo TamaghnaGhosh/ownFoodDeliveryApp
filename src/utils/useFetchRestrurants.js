@@ -43,22 +43,9 @@ const useFetchRestrurants = () => {
 
   const fetchRestaurants = async () => {
     try {
-      let endpoint;
       const latitude = 12.9351929;
       const longitude = 77.62448069999999;
-      if (window.innerWidth > 1300) {
-        // desktop
-        // endpoint = `https://examples.cloudflareworkers.com/https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9351929&lng=77.62448069999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING`;
-        endpoint = `https://foodfire.onrender.com/api/restaurants?lat=${latitude}&lng=${longitude}&page_type=DESKTOP_WEB_LISTING`;
-      } else if (window.innerWidth <= 1300 && window.innerWidth > 600) {
-        // tablet
-        endpoint = `https://foodfire.onrender.com/api/restaurants?lat=${latitude}&lng=${longitude}&page_type=DESKTOP_WEB_LISTING`;
-      } else {
-        // mobile
-        // endpoint = `${CORS_API_KEY}https://www.swiggy.com/mapi/homepage/getCards?lat=${latitude}&lng=${longitude}`;
-        endpoint = `https://foodfire.onrender.com/api/restaurants?lat=${latitude}&lng=${longitude}&page_type=DESKTOP_WEB_LISTING`;
-      }
-
+      let endpoint = `https://foodfire.onrender.com/api/restaurants?lat=${latitude}&lng=${longitude}&page_type=DESKTOP_WEB_LISTING`;
       const response = await fetch(endpoint);
       const json = await response?.json();
 
@@ -73,31 +60,12 @@ const useFetchRestrurants = () => {
 
   const getSelectedData = (json) => {
     let selectedData = [];
-    if (window.innerWidth > 1300) {
-      // console.log("desktop");
-      const filterRestaurantSearch = json?.data?.cards?.filter(
-        (c) => c?.card?.card?.gridElements?.infoWithStyle?.restaurants
-      );
-      selectedData =
-        filterRestaurantSearch?.[0]?.card?.card?.gridElements?.infoWithStyle
-          ?.restaurants || [];
-    } else if (window.innerWidth <= 1300 && window.innerWidth > 600) {
-      // console.log("tablet");
-      const filterRestaurantSearch = json?.data?.cards?.filter(
-        (c) => c?.card?.card?.gridElements?.infoWithStyle?.restaurants
-      );
-      selectedData =
-        filterRestaurantSearch?.[0]?.card?.card?.gridElements?.infoWithStyle
-          ?.restaurants || [];
-    } else {
-      // console.log("mobile");
-      const filterMobileRestaurantSearch = json?.data?.cards?.filter(
-        (c) => c?.card?.card?.gridElements?.infoWithStyle?.restaurants
-      );
-      selectedData =
-        filterMobileRestaurantSearch?.[0]?.card?.card?.gridElements
-          ?.infoWithStyle?.restaurants || [];
-    }
+    const filterRestaurantSearch = json?.data?.cards?.filter(
+      (c) => c?.card?.card?.gridElements?.infoWithStyle?.restaurants
+    );
+    selectedData =
+      filterRestaurantSearch?.[0]?.card?.card?.gridElements?.infoWithStyle
+        ?.restaurants || [];
     return selectedData;
   };
 

@@ -11,13 +11,7 @@ const useResrurantMenu = (resId) => {
 
   const fectMenuPage = async () => {
     try {
-      const data = await fetch(
-        window.innerWidth > 1300
-          ? `${MENU_API}${resId}&catalog_qa=undefined&submitAction=ENTER`
-          : window.innerWidth <= 1300 && window.innerWidth > 600
-          ? `${MENU_API}${resId}&catalog_qa=undefined&submitAction=ENTER`
-          : `${MENU_API_MOBILE}${resId}&isMenuUx4=true&submitAction=ENTER`
-      );
+      const data = await fetch(`${MENU_API}${resId}&catalog_qa=undefined&submitAction=ENTER`);
       const result = await data?.json();
       setResturantMenu(result?.data);
       const selectedMenusOfData = result?.data?.cards?.filter(
